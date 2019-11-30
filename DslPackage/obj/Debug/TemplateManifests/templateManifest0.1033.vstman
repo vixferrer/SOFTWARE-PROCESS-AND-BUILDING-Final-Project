@@ -1,0 +1,32 @@
+﻿<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>CSharp\1033\AFTVFRGGBDERAWebBDs</RelativePathOnDisk>
+    <TemplateFileName>CSharp.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{88d2a499-6ae2-4212-8bd1-af84040544c5}</TemplateID>
+        <Name Package="{b693abf6-9f5c-4534-98c8-969450af4f04}" ID="103" />
+        <Description Package="{b693abf6-9f5c-4534-98c8-969450af4f04}" ID="102" />
+        <Icon Package="{b693abf6-9f5c-4534-98c8-969450af4f04}" ID="201" />
+        <ProjectType>CSharp</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>AFTVFRGGBDERAWebBDs.AFTVFRGGB_DSLDERAWebBDs</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+  <VSTemplateContainer TemplateType="Item">
+    <RelativePathOnDisk>VisualBasic\1033\AFTVFRGGBDERAWebBDs</RelativePathOnDisk>
+    <TemplateFileName>VisualBasic.vstemplate</TemplateFileName>
+    <VSTemplateHeader>
+      <TemplateData xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+        <TemplateID>{32aa4734-ed1a-440a-ae89-02fe428bb084}</TemplateID>
+        <Name Package="{b693abf6-9f5c-4534-98c8-969450af4f04}" ID="103" />
+        <Description Package="{b693abf6-9f5c-4534-98c8-969450af4f04}" ID="102" />
+        <Icon Package="{b693abf6-9f5c-4534-98c8-969450af4f04}" ID="201" />
+        <ProjectType>VisualBasic</ProjectType>
+        <SortOrder>360</SortOrder>
+        <DefaultName>AFTVFRGGBDERAWebBDs.AFTVFRGGB_DSLDERAWebBDs</DefaultName>
+      </TemplateData>
+    </VSTemplateHeader>
+  </VSTemplateContainer>
+</VSTemplateManifest>
