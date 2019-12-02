@@ -12,28 +12,28 @@ using DslDesign = global::Microsoft.VisualStudio.Modeling.Design;
 namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 {
 	/// <summary>
-	/// DomainClass ExampleModel
+	/// DomainClass TapizER
 	/// The root in which all other elements are embedded. Appears as a diagram.
 	/// </summary>
-	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModel.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModel.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.TapizER.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.TapizER.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel))]
 	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainObjectId("4322c315-a6a3-4f3e-a73a-cce5d0d00e00")]
-	public partial class ExampleModel : DslModeling::ModelElement
+	[DslModeling::DomainObjectId("258a016f-6441-425c-91f9-ec88952f3e1f")]
+	public partial class TapizER : DslModeling::ModelElement
 	{
 		#region Constructors, domain class Id
 	
 		/// <summary>
-		/// ExampleModel domain class Id.
+		/// TapizER domain class Id.
 		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x4322c315, 0xa6a3, 0x4f3e, 0xa7, 0x3a, 0xcc, 0xe5, 0xd0, 0xd0, 0x0e, 0x00);
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x258a016f, 0x6441, 0x425c, 0x91, 0xf9, 0xec, 0x88, 0x95, 0x2f, 0x3e, 0x1f);
 		/// <summary>
 		/// Constructor
 		/// </summary>
 		/// <param name="store">Store where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public ExampleModel(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public TapizER(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
 		{
 		}
@@ -43,22 +43,23 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		/// </summary>
 		/// <param name="partition">Partition where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public ExampleModel(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public TapizER(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(partition, propertyAssignments)
 		{
 		}
 		#endregion
-		#region Elements opposite domain role accessor
+		#region Componentes opposite domain role accessor
 		
 		/// <summary>
-		/// Gets a list of Elements.
+		/// Gets a list of Componentes.
+		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.TapizER
 		/// </summary>
-		public virtual DslModeling::LinkedElementCollection<Entidad> Elements
+		public virtual DslModeling::LinkedElementCollection<Componentes> Componentes
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements.ExampleModelDomainRoleId);
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Componentes>, Componentes>(global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.TapizERDomainRoleId);
 			}
 		}
 		#endregion
@@ -82,7 +83,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			{
 				DslModeling::DomainClassInfo rootElementDomainInfo = this.Partition.DomainDataDirectory.GetDomainClass(rootElement.DomainClassId);
 				
-				if (rootElementDomainInfo.IsDerivedFrom(global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad.DomainClassId)) 
+				if (rootElementDomainInfo.IsDerivedFrom(global::UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes.DomainClassId)) 
 				{
 					return true;
 				}
@@ -111,11 +112,11 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			if ( sourceElement == null ) throw new global::System.ArgumentNullException("sourceElement");
 		
 				
-			global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad sourceEntidad1 = sourceElement as global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad;
-			if (sourceEntidad1 != null)
+			global::UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes sourceComponentes1 = sourceElement as global::UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes;
+			if (sourceComponentes1 != null)
 			{
-				// Create link for path ExampleModelHasElements.Elements
-				this.Elements.Add(sourceEntidad1);
+				// Create link for path TapizERHasComponentes.Componentes
+				this.Componentes.Add(sourceComponentes1);
 
 				return;
 			}
@@ -142,15 +143,15 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		{
 			if (sourceElement == null) throw new global::System.ArgumentNullException("sourceElement");
 				
-			global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad sourceEntidad1 = sourceElement as global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad;
-			if (sourceEntidad1 != null)
+			global::UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes sourceComponentes1 = sourceElement as global::UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes;
+			if (sourceComponentes1 != null)
 			{
-				// Delete link for path ExampleModelHasElements.Elements
+				// Delete link for path TapizERHasComponentes.Componentes
 				
-				foreach (DslModeling::ElementLink link in global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements.GetLinks((global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModel)this, sourceEntidad1))
+				foreach (DslModeling::ElementLink link in global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.GetLinks((global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizER)this, sourceComponentes1))
 				{
 					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
-					link.Delete(global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements.ExampleModelDomainRoleId, global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements.ElementDomainRoleId);
+					link.Delete(global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.TapizERDomainRoleId, global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.ComponentesDomainRoleId);
 				}
 
 				return;
@@ -165,22 +166,21 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 {
 	/// <summary>
 	/// DomainClass Entidad
-	/// Elements embedded in the model. Appear as boxes on the diagram.
+	/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad
 	/// </summary>
 	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
 	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel))]
 	[global::System.CLSCompliant(true)]
-	[global::System.Diagnostics.DebuggerDisplay("{GetType().Name,nq} (Name = {namePropertyStorage})")]
-	[DslModeling::DomainObjectId("135e50df-7faf-40f7-b61b-010a688c7c0a")]
-	public partial class Entidad : DslModeling::ModelElement
+	[DslModeling::DomainObjectId("293546fa-97d9-4290-a976-c0f939ce7f94")]
+	public partial class Entidad : Componentes
 	{
 		#region Constructors, domain class Id
 	
 		/// <summary>
 		/// Entidad domain class Id.
 		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x135e50df, 0x7faf, 0x40f7, 0xb6, 0x1b, 0x01, 0x0a, 0x68, 0x8c, 0x7c, 0x0a);
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x293546fa, 0x97d9, 0x4290, 0xa9, 0x76, 0xc0, 0xf9, 0x39, 0xce, 0x7f, 0x94);
 		/// <summary>
 		/// Constructor
 		/// </summary>
@@ -201,61 +201,283 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		{
 		}
 		#endregion
-		#region Name domain property code
+		#region Atributo opposite domain role accessor
 		
 		/// <summary>
-		/// Name domain property Id.
+		/// Gets a list of Atributo.
+		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.Entidad
 		/// </summary>
-		public static readonly global::System.Guid NameDomainPropertyId = new global::System.Guid(0x1c62aa98, 0xa994, 0x4291, 0xb2, 0x1f, 0x4e, 0x87, 0xc4, 0xbf, 0x53, 0xb8);
-		
-		/// <summary>
-		/// Storage for Name
-		/// </summary>
-		private global::System.String namePropertyStorage = "Entidad";
-		
-		/// <summary>
-		/// Gets or sets the value of Name domain property.
-		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad.Name
-		/// </summary>
-		[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad/Name.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
-		[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad/Name.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
-		[global::System.ComponentModel.DefaultValue("Entidad")]
-		[DslModeling::ElementName]
-		[DslModeling::DomainObjectId("1c62aa98-a994-4291-b21f-4e87c4bf53b8")]
-		public global::System.String Name
+		public virtual DslModeling::LinkedElementCollection<Atributo> Atributo
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return namePropertyStorage;
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Atributo>, Atributo>(global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.EntidadDomainRoleId);
+			}
+		}
+		#endregion
+		#region Relacion opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Relacion.
+		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.Entidad
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Relacion> Relacion
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Relacion>, Relacion>(global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.EntidadDomainRoleId);
+			}
+		}
+		#endregion
+		#region ElementGroupPrototype Merge methods
+		/// <summary>
+		/// Returns a value indicating whether the source element represented by the
+		/// specified root ProtoElement can be added to this element.
+		/// </summary>
+		/// <param name="rootElement">
+		/// The root ProtoElement representing a source element.  This can be null, 
+		/// in which case the ElementGroupPrototype does not contain an ProtoElements
+		/// and the code should inspect the ElementGroupPrototype context information.
+		/// </param>
+		/// <param name="elementGroupPrototype">The ElementGroupPrototype that contains the root ProtoElement.</param>
+		/// <returns>true if the source element represented by the ProtoElement can be added to this target element.</returns>
+		protected override bool CanMerge(DslModeling::ProtoElementBase rootElement, DslModeling::ElementGroupPrototype elementGroupPrototype)
+		{
+			if ( elementGroupPrototype == null ) throw new global::System.ArgumentNullException("elementGroupPrototype");
+			
+			if (rootElement != null)
+			{
+				DslModeling::DomainClassInfo rootElementDomainInfo = this.Partition.DomainDataDirectory.GetDomainClass(rootElement.DomainClassId);
+				
+				if (rootElementDomainInfo.IsDerivedFrom(global::UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.DomainClassId)) 
+				{
+					return true;
+				}
+			}
+			return base.CanMerge(rootElement, elementGroupPrototype);
+		}
+		
+		/// <summary>
+		/// Called by the Merge process to create a relationship between 
+		/// this target element and the specified source element. 
+		/// Typically, a parent-child relationship is established
+		/// between the target element (the parent) and the source element 
+		/// (the child), but any relationship can be established.
+		/// </summary>
+		/// <param name="sourceElement">The element that is to be related to this model element.</param>
+		/// <param name="elementGroup">The group of source ModelElements that have been rehydrated into the target store.</param>
+		/// <remarks>
+		/// This method is overriden to create the relationship between the target element and the specified source element.
+		/// The base method does nothing.
+		/// </remarks>
+		protected override void MergeRelate(DslModeling::ModelElement sourceElement, DslModeling::ElementGroup elementGroup)
+		{
+			// In general, sourceElement is allowed to be null, meaning that the elementGroup must be parsed for special cases.
+			// However this is not supported in generated code.  Use double-deriving on this class and then override MergeRelate completely if you 
+			// need to support this case.
+			if ( sourceElement == null ) throw new global::System.ArgumentNullException("sourceElement");
+		
+				
+			global::UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo sourceAtributo1 = sourceElement as global::UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo;
+			if (sourceAtributo1 != null)
+			{
+				// Create link for path EntidadHasAtributo.Atributo
+				this.Atributo.Add(sourceAtributo1);
+
+				return;
+			}
+		
+			// Sdk workaround to runtime bug #879350 (DSL: can't copy and paste a MEL that has a MEX). Avoid MergeRelate on ModelElementExtension
+			// during a "Paste".
+			if (sourceElement is DslModeling::ExtensionElement
+				&& sourceElement.Store.TransactionManager.CurrentTransaction.TopLevelTransaction.Context.ContextInfo.ContainsKey("{9DAFD42A-DC0E-4d78-8C3F-8266B2CF8B33}"))
+			{
+				return;
+			}
+		
+			// Fall through to base class if this class hasn't handled the merge.
+			base.MergeRelate(sourceElement, elementGroup);
+		}
+		
+		/// <summary>
+		/// Performs operation opposite to MergeRelate - i.e. disconnects a given
+		/// element from the current one (removes links created by MergeRelate).
+		/// </summary>
+		/// <param name="sourceElement">Element to be unmerged/disconnected.</param>
+		[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
+		protected override void MergeDisconnect(DslModeling::ModelElement sourceElement)
+		{
+			if (sourceElement == null) throw new global::System.ArgumentNullException("sourceElement");
+				
+			global::UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo sourceAtributo1 = sourceElement as global::UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo;
+			if (sourceAtributo1 != null)
+			{
+				// Delete link for path EntidadHasAtributo.Atributo
+				
+				foreach (DslModeling::ElementLink link in global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.GetLinks((global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad)this, sourceAtributo1))
+				{
+					// Delete the link, but without possible delete propagation to the element since it's moving to a new location.
+					link.Delete(global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.EntidadDomainRoleId, global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.AtributoDomainRoleId);
+				}
+
+				return;
+			}
+			// Fall through to base class if this class hasn't handled the unmerge.
+			base.MergeDisconnect(sourceElement);
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.AFTVFRGGBDERAWebBDs
+{
+	/// <summary>
+	/// DomainClass Relacion
+	/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("220b8fc1-578e-42b5-bb38-b2aa3c0143ba")]
+	public partial class Relacion : Componentes
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// Relacion domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x220b8fc1, 0x578e, 0x42b5, 0xbb, 0x38, 0xb2, 0xaa, 0x3c, 0x01, 0x43, 0xba);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public Relacion(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public Relacion(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+		#region Entidad opposite domain role accessor
+		
+		/// <summary>
+		/// Gets a list of Entidad.
+		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.Relacion
+		/// </summary>
+		public virtual DslModeling::LinkedElementCollection<Entidad> Entidad
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.RelacionDomainRoleId);
+			}
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.AFTVFRGGBDERAWebBDs
+{
+	/// <summary>
+	/// DomainClass Atributo
+	/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("35ce9395-915d-43ed-8ca8-447b32a04c75")]
+	public partial class Atributo : DslModeling::ModelElement
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// Atributo domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x35ce9395, 0x915d, 0x43ed, 0x8c, 0xa8, 0x44, 0x7b, 0x32, 0xa0, 0x4c, 0x75);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public Atributo(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public Atributo(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+		#region Nombre domain property code
+		
+		/// <summary>
+		/// Nombre domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid NombreDomainPropertyId = new global::System.Guid(0x01dea2c6, 0x280c, 0x4797, 0xb0, 0x77, 0xcc, 0x02, 0x3e, 0x8c, 0xb3, 0x3d);
+		
+		/// <summary>
+		/// Storage for Nombre
+		/// </summary>
+		private global::System.String nombrePropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of Nombre domain property.
+		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.Nombre
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/Nombre.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/Nombre.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("01dea2c6-280c-4797-b077-cc023e8cb33d")]
+		public global::System.String Nombre
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return nombrePropertyStorage;
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				NamePropertyHandler.Instance.SetValue(this, value);
+				NombrePropertyHandler.Instance.SetValue(this, value);
 			}
 		}
 		/// <summary>
-		/// Value handler for the Entidad.Name domain property.
+		/// Value handler for the Atributo.Nombre domain property.
 		/// </summary>
-		internal sealed partial class NamePropertyHandler : DslModeling::DomainPropertyValueHandler<Entidad, global::System.String>
+		internal sealed partial class NombrePropertyHandler : DslModeling::DomainPropertyValueHandler<Atributo, global::System.String>
 		{
-			private NamePropertyHandler() { }
+			private NombrePropertyHandler() { }
 		
 			/// <summary>
-			/// Gets the singleton instance of the Entidad.Name domain property value handler.
+			/// Gets the singleton instance of the Atributo.Nombre domain property value handler.
 			/// </summary>
-			public static readonly NamePropertyHandler Instance = new NamePropertyHandler();
+			public static readonly NombrePropertyHandler Instance = new NombrePropertyHandler();
 		
 			/// <summary>
-			/// Gets the Id of the Entidad.Name domain property.
+			/// Gets the Id of the Atributo.Nombre domain property.
 			/// </summary>
 			public sealed override global::System.Guid DomainPropertyId
 			{
 				[global::System.Diagnostics.DebuggerStepThrough]
 				get
 				{
-					return NameDomainPropertyId;
+					return NombreDomainPropertyId;
 				}
 			}
 			
@@ -264,10 +486,10 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <returns>Property value.</returns>
-			public override sealed global::System.String GetValue(Entidad element)
+			public override sealed global::System.String GetValue(Atributo element)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
-				return element.namePropertyStorage;
+				return element.nombrePropertyStorage;
 			}
 		
 			/// <summary>
@@ -275,7 +497,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			/// </summary>
 			/// <param name="element">Element which owns the property.</param>
 			/// <param name="newValue">New property value.</param>
-			public override sealed void SetValue(Entidad element, global::System.String newValue)
+			public override sealed void SetValue(Atributo element, global::System.String newValue)
 			{
 				if (element == null) throw new global::System.ArgumentNullException("element");
 		
@@ -283,58 +505,391 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 				if (newValue != oldValue)
 				{
 					ValueChanging(element, oldValue, newValue);
-					element.namePropertyStorage = newValue;
+					element.nombrePropertyStorage = newValue;
 					ValueChanged(element, oldValue, newValue);
 				}
 			}
 		}
 		
 		#endregion
-		#region ExampleModel opposite domain role accessor
+		#region TipoDato domain property code
+		
 		/// <summary>
-		/// Gets or sets ExampleModel.
+		/// TipoDato domain property Id.
 		/// </summary>
-		public virtual ExampleModel ExampleModel
+		public static readonly global::System.Guid TipoDatoDomainPropertyId = new global::System.Guid(0xb4189912, 0xabd5, 0x4da3, 0xb0, 0x35, 0xdf, 0x92, 0xe8, 0x1a, 0x0a, 0xc8);
+		
+		/// <summary>
+		/// Storage for TipoDato
+		/// </summary>
+		private global::System.String tipoDatoPropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of TipoDato domain property.
+		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.Tipo Dato
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/TipoDato.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/TipoDato.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("b4189912-abd5-4da3-b035-df92e81a0ac8")]
+		public global::System.String TipoDato
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements.ElementDomainRoleId) as ExampleModel;
+				return tipoDatoPropertyStorage;
 			}
 			[global::System.Diagnostics.DebuggerStepThrough]
 			set
 			{
-				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements.ElementDomainRoleId, value);
+				TipoDatoPropertyHandler.Instance.SetValue(this, value);
 			}
 		}
+		/// <summary>
+		/// Value handler for the Atributo.TipoDato domain property.
+		/// </summary>
+		internal sealed partial class TipoDatoPropertyHandler : DslModeling::DomainPropertyValueHandler<Atributo, global::System.String>
+		{
+			private TipoDatoPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Atributo.TipoDato domain property value handler.
+			/// </summary>
+			public static readonly TipoDatoPropertyHandler Instance = new TipoDatoPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Atributo.TipoDato domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return TipoDatoDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(Atributo element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.tipoDatoPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Atributo element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.tipoDatoPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
 		#endregion
-		#region Targets opposite domain role accessor
+		#region admiteNull domain property code
 		
 		/// <summary>
-		/// Gets a list of Targets.
-		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleRelationship.Target
+		/// admiteNull domain property Id.
 		/// </summary>
-		public virtual DslModeling::LinkedElementCollection<Entidad> Targets
+		public static readonly global::System.Guid admiteNullDomainPropertyId = new global::System.Guid(0xed579a4d, 0xd0c1, 0x42d1, 0x90, 0x03, 0xbe, 0x8c, 0xf9, 0xfb, 0x5d, 0x95);
+		
+		/// <summary>
+		/// Storage for admiteNull
+		/// </summary>
+		private global::System.Boolean admiteNullPropertyStorage;
+		
+		/// <summary>
+		/// Gets or sets the value of admiteNull domain property.
+		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.Admite Null
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/admiteNull.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/admiteNull.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("ed579a4d-d0c1-42d1-9003-be8cf9fb5d95")]
+		public global::System.Boolean admiteNull
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets.SourceDomainRoleId);
+				return admiteNullPropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				admiteNullPropertyHandler.Instance.SetValue(this, value);
 			}
 		}
-		#endregion
-		#region Sources opposite domain role accessor
-		
 		/// <summary>
-		/// Gets a list of Sources.
-		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleRelationship.Source
+		/// Value handler for the Atributo.admiteNull domain property.
 		/// </summary>
-		public virtual DslModeling::LinkedElementCollection<Entidad> Sources
+		internal sealed partial class admiteNullPropertyHandler : DslModeling::DomainPropertyValueHandler<Atributo, global::System.Boolean>
+		{
+			private admiteNullPropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Atributo.admiteNull domain property value handler.
+			/// </summary>
+			public static readonly admiteNullPropertyHandler Instance = new admiteNullPropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Atributo.admiteNull domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return admiteNullDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.Boolean GetValue(Atributo element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.admiteNullPropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Atributo element, global::System.Boolean newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.Boolean oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.admiteNullPropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region Entidad opposite domain role accessor
+		/// <summary>
+		/// Gets or sets Entidad.
+		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.Atributo
+		/// </summary>
+		public virtual Entidad Entidad
 		{
 			[global::System.Diagnostics.DebuggerStepThrough]
 			get
 			{
-				return GetRoleCollection<DslModeling::LinkedElementCollection<Entidad>, Entidad>(global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets.TargetDomainRoleId);
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.AtributoDomainRoleId) as Entidad;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.AtributoDomainRoleId, value);
+			}
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.AFTVFRGGBDERAWebBDs
+{
+	/// <summary>
+	/// DomainClass AtributoClavePrincipal
+	/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoClavePrincipal
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoClavePrincipal.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoClavePrincipal.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("67df29fd-1334-4650-8cd1-a2bc7ad36129")]
+	public partial class AtributoClavePrincipal : Atributo
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// AtributoClavePrincipal domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x67df29fd, 0x1334, 0x4650, 0x8c, 0xd1, 0xa2, 0xbc, 0x7a, 0xd3, 0x61, 0x29);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public AtributoClavePrincipal(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public AtributoClavePrincipal(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.AFTVFRGGBDERAWebBDs
+{
+	/// <summary>
+	/// DomainClass Componentes
+	/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("a8753c9b-39ab-4e2e-a939-68fa0ccfd304")]
+	public partial class Componentes : DslModeling::ModelElement
+	{
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// Componentes domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xa8753c9b, 0x39ab, 0x4e2e, 0xa9, 0x39, 0x68, 0xfa, 0x0c, 0xcf, 0xd3, 0x04);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public Componentes(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public Componentes(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+		#region Nombre domain property code
+		
+		/// <summary>
+		/// Nombre domain property Id.
+		/// </summary>
+		public static readonly global::System.Guid NombreDomainPropertyId = new global::System.Guid(0x9649683b, 0x94b6, 0x4c0f, 0xaf, 0xc7, 0xca, 0x3b, 0x3d, 0xcc, 0x3f, 0xf8);
+		
+		/// <summary>
+		/// Storage for Nombre
+		/// </summary>
+		private global::System.String nombrePropertyStorage = string.Empty;
+		
+		/// <summary>
+		/// Gets or sets the value of Nombre domain property.
+		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes.Nombre
+		/// </summary>
+		[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes/Nombre.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+		[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes/Nombre.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+		[DslModeling::DomainObjectId("9649683b-94b6-4c0f-afc7-ca3b3dcc3ff8")]
+		public global::System.String Nombre
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return nombrePropertyStorage;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				NombrePropertyHandler.Instance.SetValue(this, value);
+			}
+		}
+		/// <summary>
+		/// Value handler for the Componentes.Nombre domain property.
+		/// </summary>
+		internal sealed partial class NombrePropertyHandler : DslModeling::DomainPropertyValueHandler<Componentes, global::System.String>
+		{
+			private NombrePropertyHandler() { }
+		
+			/// <summary>
+			/// Gets the singleton instance of the Componentes.Nombre domain property value handler.
+			/// </summary>
+			public static readonly NombrePropertyHandler Instance = new NombrePropertyHandler();
+		
+			/// <summary>
+			/// Gets the Id of the Componentes.Nombre domain property.
+			/// </summary>
+			public sealed override global::System.Guid DomainPropertyId
+			{
+				[global::System.Diagnostics.DebuggerStepThrough]
+				get
+				{
+					return NombreDomainPropertyId;
+				}
+			}
+			
+			/// <summary>
+			/// Gets a strongly-typed value of the property on specified element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <returns>Property value.</returns>
+			public override sealed global::System.String GetValue(Componentes element)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+				return element.nombrePropertyStorage;
+			}
+		
+			/// <summary>
+			/// Sets property value on an element.
+			/// </summary>
+			/// <param name="element">Element which owns the property.</param>
+			/// <param name="newValue">New property value.</param>
+			public override sealed void SetValue(Componentes element, global::System.String newValue)
+			{
+				if (element == null) throw new global::System.ArgumentNullException("element");
+		
+				global::System.String oldValue = GetValue(element);
+				if (newValue != oldValue)
+				{
+					ValueChanging(element, oldValue, newValue);
+					element.nombrePropertyStorage = newValue;
+					ValueChanged(element, oldValue, newValue);
+				}
+			}
+		}
+		
+		#endregion
+		#region TapizER opposite domain role accessor
+		/// <summary>
+		/// Gets or sets TapizER.
+		/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.Componentes
+		/// </summary>
+		public virtual TapizER TapizER
+		{
+			[global::System.Diagnostics.DebuggerStepThrough]
+			get
+			{
+				return DslModeling::DomainRoleInfo.GetLinkedElement(this, global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.ComponentesDomainRoleId) as TapizER;
+			}
+			[global::System.Diagnostics.DebuggerStepThrough]
+			set
+			{
+				DslModeling::DomainRoleInfo.SetLinkedElement(this, global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.ComponentesDomainRoleId, value);
 			}
 		}
 		#endregion

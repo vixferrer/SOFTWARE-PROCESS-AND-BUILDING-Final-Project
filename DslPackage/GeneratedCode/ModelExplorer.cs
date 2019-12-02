@@ -67,7 +67,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		///</summary>
 		protected override global::System.Guid RootElementDomainClassId
 		{
-			get { return global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModel.DomainClassId; }
+			get { return global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizER.DomainClassId; }
 		}
 		
 		/// <summary>

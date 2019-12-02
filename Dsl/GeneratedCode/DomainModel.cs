@@ -22,7 +22,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 	[DslModeling::DependsOnDomainModel(typeof(global::Microsoft.VisualStudio.Modeling.CoreDomainModel))]
 	[DslModeling::DependsOnDomainModel(typeof(global::Microsoft.VisualStudio.Modeling.Diagrams.CoreDesignSurfaceDomainModel))]
 	[global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Maintainability", "CA1506:AvoidExcessiveClassCoupling", Justification = "Generated code.")]
-	[DslModeling::DomainObjectId("53f5c7a0-bb76-4080-8c7a-54188f955c43")]
+	[DslModeling::DomainObjectId("a8688626-5fc2-43a2-9ed2-8d656e306e0c")]
 	public partial class AFTVFRGGBDERAWebBDsDomainModel : DslModeling::DomainModel
 	{
 		#region Constructor, domain model Id
@@ -30,7 +30,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		/// <summary>
 		/// AFTVFRGGBDERAWebBDsDomainModel domain model Id.
 		/// </summary>
-		public static readonly global::System.Guid DomainModelId = new global::System.Guid(0x53f5c7a0, 0xbb76, 0x4080, 0x8c, 0x7a, 0x54, 0x18, 0x8f, 0x95, 0x5c, 0x43);
+		public static readonly global::System.Guid DomainModelId = new global::System.Guid(0xa8688626, 0x5fc2, 0x43a2, 0x9e, 0xd2, 0x8d, 0x65, 0x6e, 0x30, 0x6e, 0x0c);
 	
 		/// <summary>
 		/// Constructor.
@@ -67,14 +67,24 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		{
 			return new global::System.Type[]
 			{
-				typeof(ExampleModel),
+				typeof(TapizER),
 				typeof(Entidad),
-				typeof(ExampleModelHasElements),
-				typeof(EntidadReferencesTargets),
+				typeof(Relacion),
+				typeof(Atributo),
+				typeof(AtributoClavePrincipal),
+				typeof(Componentes),
+				typeof(EntidadHasAtributo),
+				typeof(TapizERHasComponentes),
+				typeof(EntidadOrigen),
 				typeof(AFTVFRGGBDERAWebBDsDiagram),
-				typeof(ExampleConnector),
-				typeof(ExampleShape),
+				typeof(EntidadHasAtributoConnector),
+				typeof(EntidadOrigenConnector),
+				typeof(GSEntidad),
+				typeof(GSRelacion),
+				typeof(GSAtributo),
+				typeof(GSAtributoCP),
 				typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.FixUpDiagram),
+				typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.DecoratorPropertyChanged),
 				typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.ConnectorRolePlayerChanged),
 			};
 		}
@@ -87,7 +97,11 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		{
 			return new DomainMemberInfo[]
 			{
-				new DomainMemberInfo(typeof(Entidad), "Name", Entidad.NameDomainPropertyId, typeof(Entidad.NamePropertyHandler)),
+				new DomainMemberInfo(typeof(Atributo), "Nombre", Atributo.NombreDomainPropertyId, typeof(Atributo.NombrePropertyHandler)),
+				new DomainMemberInfo(typeof(Atributo), "TipoDato", Atributo.TipoDatoDomainPropertyId, typeof(Atributo.TipoDatoPropertyHandler)),
+				new DomainMemberInfo(typeof(Atributo), "admiteNull", Atributo.admiteNullDomainPropertyId, typeof(Atributo.admiteNullPropertyHandler)),
+				new DomainMemberInfo(typeof(Componentes), "Nombre", Componentes.NombreDomainPropertyId, typeof(Componentes.NombrePropertyHandler)),
+				new DomainMemberInfo(typeof(EntidadOrigen), "Cardinalidad", EntidadOrigen.CardinalidadDomainPropertyId, typeof(EntidadOrigen.CardinalidadPropertyHandler)),
 			};
 		}
 		/// <summary>
@@ -98,10 +112,12 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		{
 			return new DomainRolePlayerInfo[]
 			{
-				new DomainRolePlayerInfo(typeof(ExampleModelHasElements), "ExampleModel", ExampleModelHasElements.ExampleModelDomainRoleId),
-				new DomainRolePlayerInfo(typeof(ExampleModelHasElements), "Element", ExampleModelHasElements.ElementDomainRoleId),
-				new DomainRolePlayerInfo(typeof(EntidadReferencesTargets), "Source", EntidadReferencesTargets.SourceDomainRoleId),
-				new DomainRolePlayerInfo(typeof(EntidadReferencesTargets), "Target", EntidadReferencesTargets.TargetDomainRoleId),
+				new DomainRolePlayerInfo(typeof(EntidadHasAtributo), "Entidad", EntidadHasAtributo.EntidadDomainRoleId),
+				new DomainRolePlayerInfo(typeof(EntidadHasAtributo), "Atributo", EntidadHasAtributo.AtributoDomainRoleId),
+				new DomainRolePlayerInfo(typeof(TapizERHasComponentes), "TapizER", TapizERHasComponentes.TapizERDomainRoleId),
+				new DomainRolePlayerInfo(typeof(TapizERHasComponentes), "Componentes", TapizERHasComponentes.ComponentesDomainRoleId),
+				new DomainRolePlayerInfo(typeof(EntidadOrigen), "Entidad", EntidadOrigen.EntidadDomainRoleId),
+				new DomainRolePlayerInfo(typeof(EntidadOrigen), "Relacion", EntidadOrigen.RelacionDomainRoleId),
 			};
 		}
 		#endregion
@@ -123,12 +139,20 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 	
 			if (createElementMap == null)
 			{
-				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(5);
-				createElementMap.Add(typeof(ExampleModel), 0);
+				createElementMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(13);
+				createElementMap.Add(typeof(TapizER), 0);
 				createElementMap.Add(typeof(Entidad), 1);
-				createElementMap.Add(typeof(AFTVFRGGBDERAWebBDsDiagram), 2);
-				createElementMap.Add(typeof(ExampleConnector), 3);
-				createElementMap.Add(typeof(ExampleShape), 4);
+				createElementMap.Add(typeof(Relacion), 2);
+				createElementMap.Add(typeof(Atributo), 3);
+				createElementMap.Add(typeof(AtributoClavePrincipal), 4);
+				createElementMap.Add(typeof(Componentes), 5);
+				createElementMap.Add(typeof(AFTVFRGGBDERAWebBDsDiagram), 6);
+				createElementMap.Add(typeof(EntidadHasAtributoConnector), 7);
+				createElementMap.Add(typeof(EntidadOrigenConnector), 8);
+				createElementMap.Add(typeof(GSEntidad), 9);
+				createElementMap.Add(typeof(GSRelacion), 10);
+				createElementMap.Add(typeof(GSAtributo), 11);
+				createElementMap.Add(typeof(GSAtributoCP), 12);
 			}
 			int index;
 			if (!createElementMap.TryGetValue(elementType, out index))
@@ -142,11 +166,19 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			}
 			switch (index)
 			{
-				case 0: return new ExampleModel(partition, propertyAssignments);
+				case 0: return new TapizER(partition, propertyAssignments);
 				case 1: return new Entidad(partition, propertyAssignments);
-				case 2: return new AFTVFRGGBDERAWebBDsDiagram(partition, propertyAssignments);
-				case 3: return new ExampleConnector(partition, propertyAssignments);
-				case 4: return new ExampleShape(partition, propertyAssignments);
+				case 2: return new Relacion(partition, propertyAssignments);
+				case 3: return new Atributo(partition, propertyAssignments);
+				case 4: return new AtributoClavePrincipal(partition, propertyAssignments);
+				case 5: return new Componentes(partition, propertyAssignments);
+				case 6: return new AFTVFRGGBDERAWebBDsDiagram(partition, propertyAssignments);
+				case 7: return new EntidadHasAtributoConnector(partition, propertyAssignments);
+				case 8: return new EntidadOrigenConnector(partition, propertyAssignments);
+				case 9: return new GSEntidad(partition, propertyAssignments);
+				case 10: return new GSRelacion(partition, propertyAssignments);
+				case 11: return new GSAtributo(partition, propertyAssignments);
+				case 12: return new GSAtributoCP(partition, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -169,9 +201,10 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 	
 			if (createElementLinkMap == null)
 			{
-				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(2);
-				createElementLinkMap.Add(typeof(ExampleModelHasElements), 0);
-				createElementLinkMap.Add(typeof(EntidadReferencesTargets), 1);
+				createElementLinkMap = new global::System.Collections.Generic.Dictionary<global::System.Type, int>(3);
+				createElementLinkMap.Add(typeof(EntidadHasAtributo), 0);
+				createElementLinkMap.Add(typeof(TapizERHasComponentes), 1);
+				createElementLinkMap.Add(typeof(EntidadOrigen), 2);
 			}
 			int index;
 			if (!createElementLinkMap.TryGetValue(elementLinkType, out index))
@@ -186,8 +219,9 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			}
 			switch (index)
 			{
-				case 0: return new ExampleModelHasElements(partition, roleAssignments, propertyAssignments);
-				case 1: return new EntidadReferencesTargets(partition, roleAssignments, propertyAssignments);
+				case 0: return new EntidadHasAtributo(partition, roleAssignments, propertyAssignments);
+				case 1: return new TapizERHasComponentes(partition, roleAssignments, propertyAssignments);
+				case 2: return new EntidadOrigen(partition, roleAssignments, propertyAssignments);
 				default: return null;
 			}
 		}
@@ -308,6 +342,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			
 			DslModeling::RuleManager ruleManager = store.RuleManager;
 			ruleManager.EnableRule(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.FixUpDiagram));
+			ruleManager.EnableRule(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.DecoratorPropertyChanged));
 			ruleManager.EnableRule(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.ConnectorRolePlayerChanged));
 		}
 		
@@ -320,6 +355,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			
 			DslModeling::RuleManager ruleManager = store.RuleManager;
 			ruleManager.DisableRule(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.FixUpDiagram));
+			ruleManager.DisableRule(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.DecoratorPropertyChanged));
 			ruleManager.DisableRule(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.ConnectorRolePlayerChanged));
 		}
 		#endregion
@@ -356,7 +392,8 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		public AFTVFRGGBDERAWebBDsDeleteClosureBase()
 		{
 			#region Initialize DomainData Table
-			DomainRoles.Add(global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements.ElementDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.AtributoDomainRoleId, true);
+			DomainRoles.Add(global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.ComponentesDomainRoleId, true);
 			#endregion
 		}
 		/// <summary>

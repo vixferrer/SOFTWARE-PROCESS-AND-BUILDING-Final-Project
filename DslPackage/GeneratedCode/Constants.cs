@@ -28,15 +28,15 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		public static readonly global::System.ComponentModel.Design.CommandID ViewAFTVFRGGBDERAWebBDsExplorerCommand = new global::System.ComponentModel.Design.CommandID(new global::System.Guid(AFTVFRGGBDERAWebBDsCommandSetId), 0x0001);
 	
 		// Package identifier
-		public const string AFTVFRGGBDERAWebBDsPackageId = "b693abf6-9f5c-4534-98c8-969450af4f04";
+		public const string AFTVFRGGBDERAWebBDsPackageId = "dea5e051-517d-47b1-88d4-85a4f7ef9a2e";
 		
 		// Editor factory identifier
-		public const string AFTVFRGGBDERAWebBDsEditorFactoryId = "6d08c705-ca5f-47c9-bcd8-537592d2c7ab";
+		public const string AFTVFRGGBDERAWebBDsEditorFactoryId = "7c7b976f-fe00-487d-9c41-0cd5205722e6";
 		
 		public const string DefaultDiagramExtension = ".diagram";
 		
 		// Model explorer tool window identifier
-		public const string AFTVFRGGBDERAWebBDsModelExplorerToolWindowId = "5b9f2d15-3416-4e35-8a51-f359d48ff9f9";
+		public const string AFTVFRGGBDERAWebBDsModelExplorerToolWindowId = "ce5dcc33-f03c-48ce-9f7d-8a558fe259a9";
 	}
 }
 //
@@ -47,6 +47,6 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 	internal static partial class Constants
 	{
 		// Menu identifier
-		public const string AFTVFRGGBDERAWebBDsCommandSetId = "5baeca28-fc05-4423-9222-5c2af626998c";
+		public const string AFTVFRGGBDERAWebBDsCommandSetId = "48829d9d-cc1a-4802-a3fd-edc58e941e7f";
 	}
 }

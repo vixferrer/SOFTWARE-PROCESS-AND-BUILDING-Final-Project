@@ -1,11 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<exampleModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4912f9cc-763b-4cd5-80cc-4e43227a40d8" xmlns="http://schemas.microsoft.com/dsltools/AFTVFRGGBDERAWebBDs">
-  <elements>
-    <exampleElement Id="e4b86942-0a16-49b7-b92d-b50b17edcb8e" name="ExampleElement1">
-      <targets>
-        <exampleElementMoniker name="/4912f9cc-763b-4cd5-80cc-4e43227a40d8/ExampleElement2" />
-      </targets>
-    </exampleElement>
-    <exampleElement Id="416d3b5a-9594-4e0a-877f-5f381636ccf4" name="ExampleElement2" />
-  </elements>
-</exampleModel>
+<tapizER xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="7a491669-da11-4701-bc57-ba51f1b1f658" xmlns="http://schemas.microsoft.com/dsltools/AFTVFRGGBDERAWebBDs">
+  <componentes>
+    <tapizERHasComponentes Id="acd7b68d-3199-46c3-8f20-49326f78ee1d">
+      <entidad Id="4722cacc-5d25-405e-92d1-518215aef54a" nombre="Alumno">
+        <atributo>
+          <entidadHasAtributo Id="5607150f-9557-4ab3-8edb-69fad9272f07">
+            <atributoClavePrincipal Id="9ae0cee4-ecaa-4698-a349-016fa563b269" nombre="Nombre" admiteNull="false" />
+          </entidadHasAtributo>
+          <entidadHasAtributo Id="5cfbe252-73c2-49c4-a0d7-99c9e6c8f052">
+            <atributo Id="ad19baa1-bc17-46b6-9294-d82d407e64e3" nombre="Apellidos" admiteNull="false" />
+          </entidadHasAtributo>
+          <entidadHasAtributo Id="b012121a-473b-4c44-bb46-dbeb066e666c">
+            <atributo Id="2f9d95c5-afb8-44b5-a321-13b7b64de856" nombre="Telefono" admiteNull="false" />
+          </entidadHasAtributo>
+        </atributo>
+        <relacion>
+          <entidadOrigen Id="c8b711f7-b2bb-4851-a490-18d0f8e25cb7" cardinalidad="0..*">
+            <relacionMoniker Id="9595a5ac-8b0f-4ce9-a04e-c5833f4747d7" />
+          </entidadOrigen>
+          <entidadOrigen Id="99680ab1-60a2-451c-930b-2b90cd6e4587" cardinalidad="1">
+            <relacionMoniker Id="3b4bf209-ad45-4c99-a2ba-163969bf8316" />
+          </entidadOrigen>
+        </relacion>
+      </entidad>
+    </tapizERHasComponentes>
+    <tapizERHasComponentes Id="6273b7a5-959c-489e-99ab-587150b9445f">
+      <entidad Id="ae22da52-216a-4351-bb8b-94d4f5ec2286" nombre="Asignatura">
+        <atributo>
+          <entidadHasAtributo Id="9ac28105-f4f1-4c16-8c2f-2e964c604507">
+            <atributoClavePrincipal Id="5ddb6a05-6e35-4f9b-be2d-fa81bc6a7869" nombre="Código" admiteNull="false" />
+          </entidadHasAtributo>
+        </atributo>
+        <relacion>
+          <entidadOrigen Id="1073379f-a360-4304-a993-1b415dacc464" cardinalidad="0..*">
+            <relacionMoniker Id="9595a5ac-8b0f-4ce9-a04e-c5833f4747d7" />
+          </entidadOrigen>
+        </relacion>
+      </entidad>
+    </tapizERHasComponentes>
+    <tapizERHasComponentes Id="3ea75447-55ca-405a-844e-fdb4f6e75fc9">
+      <relacion Id="9595a5ac-8b0f-4ce9-a04e-c5833f4747d7" nombre="se_matricula" />
+    </tapizERHasComponentes>
+    <tapizERHasComponentes Id="3e154293-116b-4d7b-89fd-0494c21fd0dd">
+      <relacion Id="3b4bf209-ad45-4c99-a2ba-163969bf8316" nombre="aprueba" />
+    </tapizERHasComponentes>
+    <tapizERHasComponentes Id="786d33e0-9c08-4e0d-9f0d-6644e6a679c7">
+      <entidad Id="bf212428-63cd-4b25-9ba9-beafdc7eb9f7" nombre="IPS">
+        <atributo>
+          <entidadHasAtributo Id="f414433b-66e7-4b71-a123-ac73d91b0647">
+            <atributo Id="4b64d0cd-4a0b-4b91-95d4-f0444cfe43cb" nombre="NivelDificultad" admiteNull="false" />
+          </entidadHasAtributo>
+        </atributo>
+        <relacion>
+          <entidadOrigen Id="763a548b-79b5-4e11-8d59-483a7cacb728" cardinalidad="1..*">
+            <relacionMoniker Id="3b4bf209-ad45-4c99-a2ba-163969bf8316" />
+          </entidadOrigen>
+        </relacion>
+      </entidad>
+    </tapizERHasComponentes>
+  </componentes>
+</tapizER>

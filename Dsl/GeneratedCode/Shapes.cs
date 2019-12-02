@@ -14,15 +14,15 @@ using DslDiagrams = global::Microsoft.VisualStudio.Modeling.Diagrams;
 namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 {
 	/// <summary>
-	/// DomainClass ExampleShape
+	/// DomainClass GSEntidad
 	/// Shape used to represent ExampleElements on a Diagram.
 	/// </summary>
-	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleShape.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
-	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleShape.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.GSEntidad.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.GSEntidad.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
 	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel))]
 	[global::System.CLSCompliant(true)]
-	[DslModeling::DomainObjectId("ce3bbb64-4a89-4bca-ac57-699fa889674e")]
-	public partial class ExampleShape : DslDiagrams::NodeShape
+	[DslModeling::DomainObjectId("7aa1d869-880a-475c-8764-66f4c91d7132")]
+	public partial class GSEntidad : DslDiagrams::NodeShape
 	{
 		#region DiagramElement boilerplate
 		private static DslDiagrams::StyleSet classStyleSet;
@@ -87,9 +87,9 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		}
 		
 		/// <summary>
-		/// Finds a decorator associated with ExampleShape.
+		/// Finds a decorator associated with GSEntidad.
 		/// </summary>
-		public static DslDiagrams::Decorator FindExampleShapeDecorator(string decoratorName)
+		public static DslDiagrams::Decorator FindGSEntidadDecorator(string decoratorName)
 		{	
 			if(decorators == null) return null;
 			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
@@ -143,7 +143,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			classStyleSet.OverridePen(DslDiagrams::DiagramPens.ShapeOutline, outlinePen);
 			// Fill brush settings for this shape.
 			DslDiagrams::BrushSettings backgroundBrush = new DslDiagrams::BrushSettings();
-			backgroundBrush.Color = global::System.Drawing.Color.FromKnownColor(global::System.Drawing.KnownColor.Teal);
+			backgroundBrush.Color = global::System.Drawing.Color.FromKnownColor(global::System.Drawing.KnownColor.Plum);
 			classStyleSet.OverrideBrush(DslDiagrams::DiagramBrushes.ShapeBackground, backgroundBrush);
 		
 		}
@@ -168,7 +168,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		{
 			base.InitializeShapeFields(shapeFields);
 			DslDiagrams::TextField field1 = new DslDiagrams::TextField("NameDecorator");
-			field1.DefaultText = global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel.SingletonResourceManager.GetString("ExampleShapeNameDecoratorDefaultText");
+			field1.DefaultText = global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel.SingletonResourceManager.GetString("GSEntidadNameDecoratorDefaultText");
 			field1.DefaultFocusable = true;
 			field1.DefaultAutoSize = true;
 			field1.AnchoringBehavior.MinimumHeightInLines = 1;
@@ -216,15 +216,15 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		#region Constructors, domain class Id
 	
 		/// <summary>
-		/// ExampleShape domain class Id.
+		/// GSEntidad domain class Id.
 		/// </summary>
-		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xce3bbb64, 0x4a89, 0x4bca, 0xac, 0x57, 0x69, 0x9f, 0xa8, 0x89, 0x67, 0x4e);
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x7aa1d869, 0x880a, 0x475c, 0x87, 0x64, 0x66, 0xf4, 0xc9, 0x1d, 0x71, 0x32);
 		/// <summary>
 		/// Constructor
 		/// </summary>
 		/// <param name="store">Store where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public ExampleShape(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public GSEntidad(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
 		{
 		}
@@ -234,7 +234,693 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		/// </summary>
 		/// <param name="partition">Partition where new element is to be created.</param>
 		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
-		public ExampleShape(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+		public GSEntidad(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.AFTVFRGGBDERAWebBDs
+{
+	/// <summary>
+	/// DomainClass GSRelacion
+	/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.GSRelacion
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.GSRelacion.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.GSRelacion.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("de9a8dbd-ee28-4b8d-b922-c6102e4b434c")]
+	public partial class GSRelacion : DslDiagrams::NodeShape
+	{
+		#region DiagramElement boilerplate
+		private static DslDiagrams::StyleSet classStyleSet;
+		private static global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields;
+		private static global::System.Collections.Generic.IList<DslDiagrams::Decorator> decorators;
+		
+		/// <summary>
+		/// Per-class style set for this shape.
+		/// </summary>
+		protected override DslDiagrams::StyleSet ClassStyleSet
+		{
+			get
+			{
+				if (classStyleSet == null)
+				{
+					classStyleSet = CreateClassStyleSet();
+				}
+				return classStyleSet;
+			}
+		}
+		
+		/// <summary>
+		/// Per-class ShapeFields for this shape.
+		/// </summary>
+		public override global::System.Collections.Generic.IList<DslDiagrams::ShapeField> ShapeFields
+		{
+			get
+			{
+				if (shapeFields == null)
+				{
+					shapeFields = CreateShapeFields();
+				}
+				return shapeFields;
+			}
+		}
+		
+		/// <summary>
+		/// Event fired when decorator initialization is complete for this shape type.
+		/// </summary>
+		public static event global::System.EventHandler DecoratorsInitialized;
+		
+		/// <summary>
+		/// List containing decorators used by this type.
+		/// </summary>
+		public override global::System.Collections.Generic.IList<DslDiagrams::Decorator> Decorators
+		{
+			get 
+			{
+				if(decorators == null)
+				{
+					decorators = CreateDecorators();
+					
+					// fire this event to allow the diagram to initialize decorator mappings for this shape type.
+					if(DecoratorsInitialized != null)
+					{
+						DecoratorsInitialized(this, global::System.EventArgs.Empty);
+					}
+				}
+				
+				return decorators; 
+			}
+		}
+		
+		/// <summary>
+		/// Finds a decorator associated with GSRelacion.
+		/// </summary>
+		public static DslDiagrams::Decorator FindGSRelacionDecorator(string decoratorName)
+		{	
+			if(decorators == null) return null;
+			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
+		}
+		
+		
+		/// <summary>
+		/// Shape instance initialization.
+		/// </summary>
+		public override void OnInitialize()
+		{
+			base.OnInitialize();
+			
+			// Create host shapes for outer decorators.
+			foreach(DslDiagrams::Decorator decorator in this.Decorators)
+			{
+				if(decorator.RequiresHost)
+				{
+					decorator.ConfigureHostShape(this);
+				}
+			}
+			
+		}
+		#endregion
+		#region Shape size
+		
+		/// <summary>
+		/// Default size for this shape.
+		/// </summary>
+		public override DslDiagrams::SizeD DefaultSize
+		{
+			get
+			{
+				return new DslDiagrams::SizeD(1.5, 1.5);
+			}
+		}
+		#endregion
+		#region Shape styles
+		/// <summary>
+		/// Initializes style set resources for this shape type
+		/// </summary>
+		/// <param name="classStyleSet">The style set for this shape class</param>
+		protected override void InitializeResources(DslDiagrams::StyleSet classStyleSet)
+		{
+			base.InitializeResources(classStyleSet);
+			
+			// Fill brush settings for this shape.
+			DslDiagrams::BrushSettings backgroundBrush = new DslDiagrams::BrushSettings();
+			backgroundBrush.Color = global::System.Drawing.Color.FromKnownColor(global::System.Drawing.KnownColor.LightSteelBlue);
+			classStyleSet.OverrideBrush(DslDiagrams::DiagramBrushes.ShapeBackground, backgroundBrush);
+		
+		}
+		
+		/// <summary>
+		/// Specifies the geometry used by this shape
+		/// </summary>
+		public override DslDiagrams::ShapeGeometry ShapeGeometry
+		{
+			get
+			{
+				return DslDiagrams::ShapeGeometries.Circle;
+			}
+		}
+		#endregion
+		#region Decorators
+		/// <summary>
+		/// Initialize the collection of shape fields associated with this shape type.
+		/// </summary>
+		protected override void InitializeShapeFields(global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields)
+		{
+			base.InitializeShapeFields(shapeFields);
+			DslDiagrams::TextField field1 = new DslDiagrams::TextField("NameDecorator");
+			field1.DefaultText = global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel.SingletonResourceManager.GetString("GSRelacionNameDecoratorDefaultText");
+			field1.DefaultFocusable = true;
+			field1.DefaultAutoSize = true;
+			field1.AnchoringBehavior.MinimumHeightInLines = 1;
+			field1.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field1.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			shapeFields.Add(field1);
+			
+		}
+		
+		/// <summary>
+		/// Initialize the collection of decorators associated with this shape type.  This method also
+		/// creates shape fields for outer decorators, because these are not part of the shape fields collection
+		/// associated with the shape, so they must be created here rather than in InitializeShapeFields.
+		/// </summary>
+		protected override void InitializeDecorators(global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields, global::System.Collections.Generic.IList<DslDiagrams::Decorator> decorators)
+		{
+			base.InitializeDecorators(shapeFields, decorators);
+			
+			DslDiagrams::ShapeField field1 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "NameDecorator");
+			DslDiagrams::Decorator decorator1 = new DslDiagrams::ShapeDecorator(field1, DslDiagrams::ShapeDecoratorPosition.Center, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator1);
+				
+		}
+		
+		/// <summary>
+		/// Ensure outer decorators are placed appropriately.  This is called during view fixup,
+		/// after the shape has been associated with the model element.
+		/// </summary>
+		public override void OnBoundsFixup(DslDiagrams::BoundsFixupState fixupState, int iteration, bool createdDuringViewFixup)
+		{
+			base.OnBoundsFixup(fixupState, iteration, createdDuringViewFixup);
+			
+			if(iteration == 0)
+			{
+				foreach(DslDiagrams::Decorator decorator in this.Decorators)
+				{
+					if(decorator.RequiresHost)
+					{
+						decorator.RepositionHostShape(decorator.GetHostShape(this));
+					}
+				}
+			}
+		}
+		#endregion
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// GSRelacion domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0xde9a8dbd, 0xee28, 0x4b8d, 0xb9, 0x22, 0xc6, 0x10, 0x2e, 0x4b, 0x43, 0x4c);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public GSRelacion(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public GSRelacion(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.AFTVFRGGBDERAWebBDs
+{
+	/// <summary>
+	/// DomainClass GSAtributo
+	/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributo
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributo.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributo.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("5735777d-e6d3-4e31-8147-026d2538ec1b")]
+	public partial class GSAtributo : DslDiagrams::NodeShape
+	{
+		#region DiagramElement boilerplate
+		private static DslDiagrams::StyleSet classStyleSet;
+		private static global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields;
+		private static global::System.Collections.Generic.IList<DslDiagrams::Decorator> decorators;
+		
+		/// <summary>
+		/// Per-class style set for this shape.
+		/// </summary>
+		protected override DslDiagrams::StyleSet ClassStyleSet
+		{
+			get
+			{
+				if (classStyleSet == null)
+				{
+					classStyleSet = CreateClassStyleSet();
+				}
+				return classStyleSet;
+			}
+		}
+		
+		/// <summary>
+		/// Per-class ShapeFields for this shape.
+		/// </summary>
+		public override global::System.Collections.Generic.IList<DslDiagrams::ShapeField> ShapeFields
+		{
+			get
+			{
+				if (shapeFields == null)
+				{
+					shapeFields = CreateShapeFields();
+				}
+				return shapeFields;
+			}
+		}
+		
+		/// <summary>
+		/// Event fired when decorator initialization is complete for this shape type.
+		/// </summary>
+		public static event global::System.EventHandler DecoratorsInitialized;
+		
+		/// <summary>
+		/// List containing decorators used by this type.
+		/// </summary>
+		public override global::System.Collections.Generic.IList<DslDiagrams::Decorator> Decorators
+		{
+			get 
+			{
+				if(decorators == null)
+				{
+					decorators = CreateDecorators();
+					
+					// fire this event to allow the diagram to initialize decorator mappings for this shape type.
+					if(DecoratorsInitialized != null)
+					{
+						DecoratorsInitialized(this, global::System.EventArgs.Empty);
+					}
+				}
+				
+				return decorators; 
+			}
+		}
+		
+		/// <summary>
+		/// Finds a decorator associated with GSAtributo.
+		/// </summary>
+		public static DslDiagrams::Decorator FindGSAtributoDecorator(string decoratorName)
+		{	
+			if(decorators == null) return null;
+			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
+		}
+		
+		
+		/// <summary>
+		/// Shape instance initialization.
+		/// </summary>
+		public override void OnInitialize()
+		{
+			base.OnInitialize();
+			
+			// Create host shapes for outer decorators.
+			foreach(DslDiagrams::Decorator decorator in this.Decorators)
+			{
+				if(decorator.RequiresHost)
+				{
+					decorator.ConfigureHostShape(this);
+				}
+			}
+			
+		}
+		#endregion
+		#region Shape size
+		
+		/// <summary>
+		/// Default size for this shape.
+		/// </summary>
+		public override DslDiagrams::SizeD DefaultSize
+		{
+			get
+			{
+				return new DslDiagrams::SizeD(1.5, 1);
+			}
+		}
+		#endregion
+		#region Shape styles
+		/// <summary>
+		/// Initializes style set resources for this shape type
+		/// </summary>
+		/// <param name="classStyleSet">The style set for this shape class</param>
+		protected override void InitializeResources(DslDiagrams::StyleSet classStyleSet)
+		{
+			base.InitializeResources(classStyleSet);
+			
+			// Fill brush settings for this shape.
+			DslDiagrams::BrushSettings backgroundBrush = new DslDiagrams::BrushSettings();
+			backgroundBrush.Color = global::System.Drawing.Color.FromKnownColor(global::System.Drawing.KnownColor.Pink);
+			classStyleSet.OverrideBrush(DslDiagrams::DiagramBrushes.ShapeBackground, backgroundBrush);
+		
+			// Custom font styles
+			DslDiagrams::FontSettings fontSettings;
+			fontSettings = new DslDiagrams::FontSettings();
+			fontSettings.Style =  global::System.Drawing.FontStyle.Regular ;
+			fontSettings.Size = 10/72.0F;
+			classStyleSet.AddFont(new DslDiagrams::StyleSetResourceId(string.Empty, "ShapeTextRegular10"), DslDiagrams::DiagramFonts.ShapeText, fontSettings);
+		}
+		
+		/// <summary>
+		/// Specifies the geometry used by this shape
+		/// </summary>
+		public override DslDiagrams::ShapeGeometry ShapeGeometry
+		{
+			get
+			{
+				return DslDiagrams::ShapeGeometries.Ellipse;
+			}
+		}
+		#endregion
+		#region Decorators
+		/// <summary>
+		/// Initialize the collection of shape fields associated with this shape type.
+		/// </summary>
+		protected override void InitializeShapeFields(global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields)
+		{
+			base.InitializeShapeFields(shapeFields);
+			DslDiagrams::TextField field1 = new DslDiagrams::TextField("NameDecorator");
+			field1.DefaultText = global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel.SingletonResourceManager.GetString("GSAtributoNameDecoratorDefaultText");
+			field1.DefaultFocusable = true;
+			field1.DefaultAutoSize = true;
+			field1.AnchoringBehavior.MinimumHeightInLines = 1;
+			field1.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field1.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			field1.DefaultFontId = new DslDiagrams::StyleSetResourceId(string.Empty, "ShapeTextRegular10");			
+			shapeFields.Add(field1);
+			
+		}
+		
+		/// <summary>
+		/// Initialize the collection of decorators associated with this shape type.  This method also
+		/// creates shape fields for outer decorators, because these are not part of the shape fields collection
+		/// associated with the shape, so they must be created here rather than in InitializeShapeFields.
+		/// </summary>
+		protected override void InitializeDecorators(global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields, global::System.Collections.Generic.IList<DslDiagrams::Decorator> decorators)
+		{
+			base.InitializeDecorators(shapeFields, decorators);
+			
+			DslDiagrams::ShapeField field1 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "NameDecorator");
+			DslDiagrams::Decorator decorator1 = new DslDiagrams::ShapeDecorator(field1, DslDiagrams::ShapeDecoratorPosition.Center, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator1);
+				
+		}
+		
+		/// <summary>
+		/// Ensure outer decorators are placed appropriately.  This is called during view fixup,
+		/// after the shape has been associated with the model element.
+		/// </summary>
+		public override void OnBoundsFixup(DslDiagrams::BoundsFixupState fixupState, int iteration, bool createdDuringViewFixup)
+		{
+			base.OnBoundsFixup(fixupState, iteration, createdDuringViewFixup);
+			
+			if(iteration == 0)
+			{
+				foreach(DslDiagrams::Decorator decorator in this.Decorators)
+				{
+					if(decorator.RequiresHost)
+					{
+						decorator.RepositionHostShape(decorator.GetHostShape(this));
+					}
+				}
+			}
+		}
+		#endregion
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// GSAtributo domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x5735777d, 0xe6d3, 0x4e31, 0x81, 0x47, 0x02, 0x6d, 0x25, 0x38, 0xec, 0x1b);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public GSAtributo(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public GSAtributo(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: base(partition, propertyAssignments)
+		{
+		}
+		#endregion
+	}
+}
+namespace UPM_IPS.AFTVFRGGBDERAWebBDs
+{
+	/// <summary>
+	/// DomainClass GSAtributoCP
+	/// Description for UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributoCP
+	/// </summary>
+	[DslDesign::DisplayNameResource("UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributoCP.DisplayName", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslDesign::DescriptionResource("UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributoCP.Description", typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel), "UPM_IPS.AFTVFRGGBDERAWebBDs.GeneratedCode.DomainModelResx")]
+	[DslModeling::DomainModelOwner(typeof(global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel))]
+	[global::System.CLSCompliant(true)]
+	[DslModeling::DomainObjectId("5564a155-7016-453e-876a-7d9bb52263ba")]
+	public partial class GSAtributoCP : DslDiagrams::NodeShape
+	{
+		#region DiagramElement boilerplate
+		private static DslDiagrams::StyleSet classStyleSet;
+		private static global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields;
+		private static global::System.Collections.Generic.IList<DslDiagrams::Decorator> decorators;
+		
+		/// <summary>
+		/// Per-class style set for this shape.
+		/// </summary>
+		protected override DslDiagrams::StyleSet ClassStyleSet
+		{
+			get
+			{
+				if (classStyleSet == null)
+				{
+					classStyleSet = CreateClassStyleSet();
+				}
+				return classStyleSet;
+			}
+		}
+		
+		/// <summary>
+		/// Per-class ShapeFields for this shape.
+		/// </summary>
+		public override global::System.Collections.Generic.IList<DslDiagrams::ShapeField> ShapeFields
+		{
+			get
+			{
+				if (shapeFields == null)
+				{
+					shapeFields = CreateShapeFields();
+				}
+				return shapeFields;
+			}
+		}
+		
+		/// <summary>
+		/// Event fired when decorator initialization is complete for this shape type.
+		/// </summary>
+		public static event global::System.EventHandler DecoratorsInitialized;
+		
+		/// <summary>
+		/// List containing decorators used by this type.
+		/// </summary>
+		public override global::System.Collections.Generic.IList<DslDiagrams::Decorator> Decorators
+		{
+			get 
+			{
+				if(decorators == null)
+				{
+					decorators = CreateDecorators();
+					
+					// fire this event to allow the diagram to initialize decorator mappings for this shape type.
+					if(DecoratorsInitialized != null)
+					{
+						DecoratorsInitialized(this, global::System.EventArgs.Empty);
+					}
+				}
+				
+				return decorators; 
+			}
+		}
+		
+		/// <summary>
+		/// Finds a decorator associated with GSAtributoCP.
+		/// </summary>
+		public static DslDiagrams::Decorator FindGSAtributoCPDecorator(string decoratorName)
+		{	
+			if(decorators == null) return null;
+			return DslDiagrams::ShapeElement.FindDecorator(decorators, decoratorName);
+		}
+		
+		
+		/// <summary>
+		/// Shape instance initialization.
+		/// </summary>
+		public override void OnInitialize()
+		{
+			base.OnInitialize();
+			
+			// Create host shapes for outer decorators.
+			foreach(DslDiagrams::Decorator decorator in this.Decorators)
+			{
+				if(decorator.RequiresHost)
+				{
+					decorator.ConfigureHostShape(this);
+				}
+			}
+			
+		}
+		#endregion
+		#region Shape size
+		
+		/// <summary>
+		/// Default size for this shape.
+		/// </summary>
+		public override DslDiagrams::SizeD DefaultSize
+		{
+			get
+			{
+				return new DslDiagrams::SizeD(1.5, 1);
+			}
+		}
+		#endregion
+		#region Shape styles
+		/// <summary>
+		/// Initializes style set resources for this shape type
+		/// </summary>
+		/// <param name="classStyleSet">The style set for this shape class</param>
+		protected override void InitializeResources(DslDiagrams::StyleSet classStyleSet)
+		{
+			base.InitializeResources(classStyleSet);
+			
+			// Fill brush settings for this shape.
+			DslDiagrams::BrushSettings backgroundBrush = new DslDiagrams::BrushSettings();
+			backgroundBrush.Color = global::System.Drawing.Color.FromKnownColor(global::System.Drawing.KnownColor.Pink);
+			classStyleSet.OverrideBrush(DslDiagrams::DiagramBrushes.ShapeBackground, backgroundBrush);
+		
+			// Custom font styles
+			DslDiagrams::FontSettings fontSettings;
+			fontSettings = new DslDiagrams::FontSettings();
+			fontSettings.Style =  global::System.Drawing.FontStyle.Underline ;
+			fontSettings.Size = 10/72.0F;
+			classStyleSet.AddFont(new DslDiagrams::StyleSetResourceId(string.Empty, "ShapeTextUnderline10"), DslDiagrams::DiagramFonts.ShapeText, fontSettings);
+		}
+		
+		/// <summary>
+		/// Specifies the geometry used by this shape
+		/// </summary>
+		public override DslDiagrams::ShapeGeometry ShapeGeometry
+		{
+			get
+			{
+				return DslDiagrams::ShapeGeometries.Ellipse;
+			}
+		}
+		#endregion
+		#region Decorators
+		/// <summary>
+		/// Initialize the collection of shape fields associated with this shape type.
+		/// </summary>
+		protected override void InitializeShapeFields(global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields)
+		{
+			base.InitializeShapeFields(shapeFields);
+			DslDiagrams::TextField field1 = new DslDiagrams::TextField("NameDecorator");
+			field1.DefaultText = global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel.SingletonResourceManager.GetString("GSAtributoCPNameDecoratorDefaultText");
+			field1.DefaultFocusable = true;
+			field1.DefaultAutoSize = true;
+			field1.AnchoringBehavior.MinimumHeightInLines = 1;
+			field1.AnchoringBehavior.MinimumWidthInCharacters = 1;
+			field1.DefaultAccessibleState = global::System.Windows.Forms.AccessibleStates.Invisible;
+			field1.DefaultFontId = new DslDiagrams::StyleSetResourceId(string.Empty, "ShapeTextUnderline10");			
+			shapeFields.Add(field1);
+			
+		}
+		
+		/// <summary>
+		/// Initialize the collection of decorators associated with this shape type.  This method also
+		/// creates shape fields for outer decorators, because these are not part of the shape fields collection
+		/// associated with the shape, so they must be created here rather than in InitializeShapeFields.
+		/// </summary>
+		protected override void InitializeDecorators(global::System.Collections.Generic.IList<DslDiagrams::ShapeField> shapeFields, global::System.Collections.Generic.IList<DslDiagrams::Decorator> decorators)
+		{
+			base.InitializeDecorators(shapeFields, decorators);
+			
+			DslDiagrams::ShapeField field1 = DslDiagrams::ShapeElement.FindShapeField(shapeFields, "NameDecorator");
+			DslDiagrams::Decorator decorator1 = new DslDiagrams::ShapeDecorator(field1, DslDiagrams::ShapeDecoratorPosition.Center, DslDiagrams::PointD.Empty);
+			decorators.Add(decorator1);
+				
+		}
+		
+		/// <summary>
+		/// Ensure outer decorators are placed appropriately.  This is called during view fixup,
+		/// after the shape has been associated with the model element.
+		/// </summary>
+		public override void OnBoundsFixup(DslDiagrams::BoundsFixupState fixupState, int iteration, bool createdDuringViewFixup)
+		{
+			base.OnBoundsFixup(fixupState, iteration, createdDuringViewFixup);
+			
+			if(iteration == 0)
+			{
+				foreach(DslDiagrams::Decorator decorator in this.Decorators)
+				{
+					if(decorator.RequiresHost)
+					{
+						decorator.RepositionHostShape(decorator.GetHostShape(this));
+					}
+				}
+			}
+		}
+		#endregion
+		#region Constructors, domain class Id
+	
+		/// <summary>
+		/// GSAtributoCP domain class Id.
+		/// </summary>
+		public static readonly new global::System.Guid DomainClassId = new global::System.Guid(0x5564a155, 0x7016, 0x453e, 0x87, 0x6a, 0x7d, 0x9b, 0xb5, 0x22, 0x63, 0xba);
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="store">Store where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public GSAtributoCP(DslModeling::Store store, params DslModeling::PropertyAssignment[] propertyAssignments)
+			: this(store != null ? store.DefaultPartitionForClass(DomainClassId) : null, propertyAssignments)
+		{
+		}
+		
+		/// <summary>
+		/// Constructor
+		/// </summary>
+		/// <param name="partition">Partition where new element is to be created.</param>
+		/// <param name="propertyAssignments">List of domain property id/value pairs to set once the element is created.</param>
+		public GSAtributoCP(DslModeling::Partition partition, params DslModeling::PropertyAssignment[] propertyAssignments)
 			: base(partition, propertyAssignments)
 		{
 		}

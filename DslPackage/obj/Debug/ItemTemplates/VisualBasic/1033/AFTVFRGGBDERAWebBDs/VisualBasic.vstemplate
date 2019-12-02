@@ -1,10 +1,10 @@
 ﻿<!--DSL Tools Language Template-->
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<TemplateData>
-		<TemplateID>{32aa4734-ed1a-440a-ae89-02fe428bb084}</TemplateID>
-		<Name Package="{b693abf6-9f5c-4534-98c8-969450af4f04}" ID="103"/>
-		<Description Package="{b693abf6-9f5c-4534-98c8-969450af4f04}" ID="102"/>
-		<Icon Package="{b693abf6-9f5c-4534-98c8-969450af4f04}" ID="201" />
+		<TemplateID>{72484c57-5d45-4e9d-8d8d-3ba95090792a}</TemplateID>
+		<Name Package="{dea5e051-517d-47b1-88d4-85a4f7ef9a2e}" ID="103"/>
+		<Description Package="{dea5e051-517d-47b1-88d4-85a4f7ef9a2e}" ID="102"/>
+		<Icon Package="{dea5e051-517d-47b1-88d4-85a4f7ef9a2e}" ID="201" />
 		<ProjectType>VisualBasic</ProjectType>
 		<SortOrder>360</SortOrder>
 		<DefaultName>AFTVFRGGBDERAWebBDs.AFTVFRGGB_DSLDERAWebBDs</DefaultName>

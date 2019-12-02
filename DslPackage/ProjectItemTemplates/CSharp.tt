@@ -4,7 +4,7 @@
 <!--DSL Tools Language Template-->
 <VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<TemplateData>
-		<TemplateID>{88d2a499-6ae2-4212-8bd1-af84040544c5}</TemplateID>
+		<TemplateID>{d827608a-aa1d-441f-8cc2-659a55da73f9}</TemplateID>
 		<Name Package="{<#= this.Dsl.PackageGuid #>}" ID="103"/>
 		<Description Package="{<#= this.Dsl.PackageGuid #>}" ID="102"/>
 		<Icon Package="{<#= this.Dsl.PackageGuid #>}" ID="201" />

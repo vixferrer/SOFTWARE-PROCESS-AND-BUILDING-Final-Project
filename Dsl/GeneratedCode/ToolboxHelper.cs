@@ -48,9 +48,9 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		/// </remarks>
 		public const string ToolboxFilterString = "AFTVFRGGBDERAWebBDs.1.0";
 		/// <summary>
-		/// Toolbox item filter string used to identify ExampleRelationship connector tool.
+		/// Toolbox item filter string used to identify Entidad_a_Relacion connector tool.
 		/// </summary>
-		public const string ExampleRelationshipFilterString = "ExampleRelationship.1.0";
+		public const string Entidad_a_RelacionFilterString = "Entidad_a_Relacion.1.0";
 
 	
 		private global::System.Collections.Generic.Dictionary<string, DslDesign::ModelingToolboxItem> toolboxItemCache = new global::System.Collections.Generic.Dictionary<string, DslDesign::ModelingToolboxItem>();
@@ -86,7 +86,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		{
 			get
 			{
-				return global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel.SingletonResourceManager.GetString("AFTVFRGGBDERAWebBDsToolboxTab", global::System.Globalization.CultureInfo.CurrentUICulture);
+				return global::UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDomainModel.SingletonResourceManager.GetString("TodoToolboxTab", global::System.Globalization.CultureInfo.CurrentUICulture);
 			}
 		}
 		
@@ -98,7 +98,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		{
 			get
 			{
-				return 2;
+				return 5;
 			}
 		}
 		
@@ -147,38 +147,86 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			global::System.Globalization.CultureInfo resourceCulture = global::System.Globalization.CultureInfo.CurrentUICulture;
 			switch(itemId)
 			{
-				case "UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleElementToolboxItem":
-					// Add ExampleElement shape tool.
+				case "UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadToolboxItem":
+					// Add Entidad shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleElementToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						1, // Position relative to other items in the same toolbox tab.
-						resourceManager.GetString("ExampleElementToolboxItem", resourceCulture), // Localized display name for the item.
-						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ExampleElementToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
-						"UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
-						resourceManager.GetString("AFTVFRGGBDERAWebBDsToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
-						"CreateExampleClassF1Keyword", // F1 help keyword for the toolbox item.
-						resourceManager.GetString("ExampleElementToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						resourceManager.GetString("EntidadToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("EntidadToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
+						"UPM_IPS.AFTVFRGGBDERAWebBDs.TodoToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("TodoToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"Entidad", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("EntidadToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
 						CreateElementToolPrototype(store, global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
 						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
 						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
 						});
 					break;
-				case "UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleRelationshipToolboxItem":
-
-					// Add ExampleRelationship connector tool.
+				case "UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoToolboxItem":
+					// Add Atributo shape tool.
 					result = new DslDesign::ModelingToolboxItem(
-						"UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleRelationshipToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						"UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoToolboxItem", // Unique identifier (non-localized) for the toolbox item.
 						2, // Position relative to other items in the same toolbox tab.
-						resourceManager.GetString("ExampleRelationshipToolboxItem", resourceCulture), // Localized display name for the item.
-						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("ExampleRelationshipToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
-						"UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
-						resourceManager.GetString("AFTVFRGGBDERAWebBDsToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
-						"ConnectExampleRelationF1Keyword", // F1 help keyword for the toolbox item.
-						resourceManager.GetString("ExampleRelationshipToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						resourceManager.GetString("AtributoToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("AtributoToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
+						"UPM_IPS.AFTVFRGGBDERAWebBDs.TodoToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("TodoToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"Atributo", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("AtributoToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						CreateElementToolPrototype(store, global::UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
+						});
+					break;
+				case "UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoClavePrincipalToolboxItem":
+					// Add AtributoClavePrincipal shape tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoClavePrincipalToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						3, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("AtributoClavePrincipalToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("AtributoClavePrincipalToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
+						"UPM_IPS.AFTVFRGGBDERAWebBDs.TodoToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("TodoToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"AtributoClavePrincipal", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("AtributoClavePrincipalToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						CreateElementToolPrototype(store, global::UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoClavePrincipal.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
+						});
+					break;
+				case "UPM_IPS.AFTVFRGGBDERAWebBDs.RelacionToolboxItem":
+					// Add Relacion shape tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.AFTVFRGGBDERAWebBDs.RelacionToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						4, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("RelacionToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("RelacionToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.
+						"UPM_IPS.AFTVFRGGBDERAWebBDs.TodoToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("TodoToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"Relacion", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("RelacionToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
+						CreateElementToolPrototype(store, global::UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion.DomainClassId), // ElementGroupPrototype (data object) representing model element on the toolbox.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
+						new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require) 
+						});
+					break;
+				case "UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad_a_RelacionToolboxItem":
+
+					// Add Entidad_a_Relacion connector tool.
+					result = new DslDesign::ModelingToolboxItem(
+						"UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad_a_RelacionToolboxItem", // Unique identifier (non-localized) for the toolbox item.
+						5, // Position relative to other items in the same toolbox tab.
+						resourceManager.GetString("Entidad_a_RelacionToolboxItem", resourceCulture), // Localized display name for the item.
+						(global::System.Drawing.Bitmap)DslDiagrams::ImageHelper.GetImage(resourceManager.GetObject("Entidad_a_RelacionToolboxBitmap", resourceCulture)), // Image displayed next to the toolbox item.				
+						"UPM_IPS.AFTVFRGGBDERAWebBDs.TodoToolboxTab", // Unique identifier (non-localized) for the toolbox item tab.
+						resourceManager.GetString("TodoToolboxTab", resourceCulture), // Localized display name for the toolbox tab.
+						"Entidad_a_Relacion", // F1 help keyword for the toolbox item.
+						resourceManager.GetString("Entidad_a_RelacionToolboxTooltip", resourceCulture), // Localized tooltip text for the toolbox item.
 						null, // Connector toolbox items do not have an underlying data object.
 						new global::System.ComponentModel.ToolboxItemFilterAttribute[] { // Collection of ToolboxItemFilterAttribute objects that determine visibility of the toolbox item.
 							new global::System.ComponentModel.ToolboxItemFilterAttribute(ToolboxFilterString, global::System.ComponentModel.ToolboxItemFilterType.Require), 
-							new global::System.ComponentModel.ToolboxItemFilterAttribute(ExampleRelationshipFilterString)
+							new global::System.ComponentModel.ToolboxItemFilterAttribute(Entidad_a_RelacionFilterString)
 						});
 					break;
 				default:

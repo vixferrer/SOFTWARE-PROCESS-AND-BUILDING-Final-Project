@@ -28,22 +28,47 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 	[VSShell::ProvideToolWindow(typeof(AFTVFRGGBDERAWebBDsExplorerToolWindow), MultiInstances = false, Style = VSShell::VsDockStyle.Tabbed, Orientation = VSShell::ToolWindowOrientation.Right, Window = "{3AE79031-E1BC-11D0-8F78-00A0C9110057}")]
 	[VSShell::ProvideToolWindowVisibility(typeof(AFTVFRGGBDERAWebBDsExplorerToolWindow), Constants.AFTVFRGGBDERAWebBDsEditorFactoryId)]
 	[VSShell::ProvideStaticToolboxGroup("@AFTVFRGGBDERAWebBDsToolboxTab;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", "UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsToolboxTab")]
-	[VSShell::ProvideStaticToolboxItem("UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsToolboxTab",
-					"@ExampleElementToolboxItem;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
-					"UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleElementToolboxItem", 
+	[VSShell::ProvideStaticToolboxGroup("@TodoToolboxTab;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", "UPM_IPS.AFTVFRGGBDERAWebBDs.TodoToolboxTab")]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.AFTVFRGGBDERAWebBDs.TodoToolboxTab",
+					"@EntidadToolboxItem;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
+					"UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"CreateExampleClassF1Keyword", 
-					"@ExampleElementToolboxBitmap;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
+					"Entidad", 
+					"@EntidadToolboxBitmap;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
 					0xff00ff,
 					Index = 0)]
-	[VSShell::ProvideStaticToolboxItem("UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsToolboxTab",
-					"@ExampleRelationshipToolboxItem;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
-					"UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleRelationshipToolboxItem", 
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.AFTVFRGGBDERAWebBDs.TodoToolboxTab",
+					"@AtributoToolboxItem;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
+					"UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoToolboxItem", 
 					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
-					"ConnectExampleRelationF1Keyword", 
-					"@ExampleRelationshipToolboxBitmap;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
+					"Atributo", 
+					"@AtributoToolboxBitmap;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
 					0xff00ff,
 					Index = 1)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.AFTVFRGGBDERAWebBDs.TodoToolboxTab",
+					"@AtributoClavePrincipalToolboxItem;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
+					"UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoClavePrincipalToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"AtributoClavePrincipal", 
+					"@AtributoClavePrincipalToolboxBitmap;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
+					0xff00ff,
+					Index = 2)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.AFTVFRGGBDERAWebBDs.TodoToolboxTab",
+					"@RelacionToolboxItem;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
+					"UPM_IPS.AFTVFRGGBDERAWebBDs.RelacionToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"Relacion", 
+					"@RelacionToolboxBitmap;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
+					0xff00ff,
+					Index = 3)]
+	[VSShell::ProvideStaticToolboxItem("UPM_IPS.AFTVFRGGBDERAWebBDs.TodoToolboxTab",
+					"@Entidad_a_RelacionToolboxItem;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
+					"UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad_a_RelacionToolboxItem", 
+					"CF_TOOLBOXITEMCONTAINER,CF_TOOLBOXITEMCONTAINER_HASH,CF_TOOLBOXITEMCONTAINER_CONTENTS", 
+					"Entidad_a_Relacion", 
+					"@Entidad_a_RelacionToolboxBitmap;UPM_IPS.AFTVFRGGBDERAWebBDs.Dsl.dll", 
+					0xff00ff,
+					Index = 4)]
 	[VSShell::ProvideEditorFactory(typeof(AFTVFRGGBDERAWebBDsEditorFactory), 103, TrustLevel = VSShellInterop::__VSEDITORTRUSTLEVEL.ETL_AlwaysTrusted)]
 	[VSShell::ProvideEditorExtension(typeof(AFTVFRGGBDERAWebBDsEditorFactory), "." + Constants.DesignerFileExtension, 50)]
 	[VSShell::ProvideEditorLogicalView(typeof(AFTVFRGGBDERAWebBDsEditorFactory), "{7651A702-06E5-11D1-8EBD-00A0C90F26EA}")] // Designer logical view GUID i.e. VSConstants.LOGVIEWID_Designer

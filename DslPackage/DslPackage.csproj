@@ -7,7 +7,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20723</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C78214FA-FDA6-47CB-976F-51226A6E77F0}</ProjectGuid>
+    <ProjectGuid>{BCE94F4D-98B6-43FC-8858-CF2FB9688D3B}</ProjectGuid>
     <ProjectTypeGuids>{82b43b9b-a64c-4715-b499-d71e9ca2bd60};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -181,7 +181,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Dsl\Dsl.csproj">
-      <Project>{03050f60-ab68-47b9-8ec4-40a0b644140e}</Project>
+      <Project>{3f23b665-d71c-47dc-be31-700b20b148c3}</Project>
       <Name>Dsl</Name>
       <IncludeOutputGroupsInVSIX>
         BuiltProjectOutputGroup;

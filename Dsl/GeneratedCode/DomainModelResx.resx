@@ -125,113 +125,257 @@
     <value>AFTVFRGGBDERAWebBDs</value>
     <comment>DisplayName for DslLibrary &apos;AFTVFRGGBDERAWebBDs&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModel.Description" xml:space="preserve">
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.TapizER.Description" xml:space="preserve">
     <value>The root in which all other elements are embedded. Appears as a diagram.</value>
-    <comment>Description for DomainClass &apos;ExampleModel&apos;</comment>
+    <comment>Description for DomainClass &apos;TapizER&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModel.DisplayName" xml:space="preserve">
-    <value>Example Model</value>
-    <comment>DisplayName for DomainClass &apos;ExampleModel&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.TapizER.DisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>DisplayName for DomainClass &apos;TapizER&apos;</comment>
   </data>
   <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad.Description" xml:space="preserve">
-    <value>Elements embedded in the model. Appear as boxes on the diagram.</value>
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad</value>
     <comment>Description for DomainClass &apos;Entidad&apos;</comment>
   </data>
   <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad.DisplayName" xml:space="preserve">
     <value>Entidad</value>
     <comment>DisplayName for DomainClass &apos;Entidad&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad/Name.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad.Name</value>
-    <comment>Description for DomainProperty &apos;Name&apos; on DomainClass &apos;Entidad&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion</value>
+    <comment>Description for DomainClass &apos;Relacion&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad/Name.DisplayName" xml:space="preserve">
-    <value>Name</value>
-    <comment>DisplayName for DomainProperty &apos;Name&apos; on DomainClass &apos;Entidad&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainClass &apos;Relacion&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements.Description" xml:space="preserve">
-    <value>Embedding relationship between the Model and Elements</value>
-    <comment>Description for DomainClass &apos;ExampleModelHasElements&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo</value>
+    <comment>Description for DomainClass &apos;Atributo&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements.DisplayName" xml:space="preserve">
-    <value>Example Model Has Elements</value>
-    <comment>DisplayName for DomainClass &apos;ExampleModelHasElements&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.DisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>DisplayName for DomainClass &apos;Atributo&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements/ExampleModel.Description" xml:space="preserve">
-    <value></value>
-    <comment>Description for DomainRole &apos;ExampleModel&apos; on DomainRelationship &apos;ExampleModelHasElements&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/Nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.Nombre</value>
+    <comment>Description for DomainProperty &apos;Nombre&apos; on DomainClass &apos;Atributo&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements/ExampleModel.DisplayName" xml:space="preserve">
-    <value>Example Model</value>
-    <comment>DisplayName for DomainRole &apos;ExampleModel&apos; on DomainRelationship &apos;ExampleModelHasElements&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/Nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;Nombre&apos; on DomainClass &apos;Atributo&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements/ExampleModel.PropertyDisplayName" xml:space="preserve">
-    <value>Elements</value>
-    <comment>PropertyDisplayName for DomainRole &apos;ExampleModel&apos; on DomainRelationship &apos;ExampleModelHasElements&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/TipoDato.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.Tipo Dato</value>
+    <comment>Description for DomainProperty &apos;TipoDato&apos; on DomainClass &apos;Atributo&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements/Element.Description" xml:space="preserve">
-    <value></value>
-    <comment>Description for DomainRole &apos;Element&apos; on DomainRelationship &apos;ExampleModelHasElements&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/TipoDato.DisplayName" xml:space="preserve">
+    <value>Tipo Dato</value>
+    <comment>DisplayName for DomainProperty &apos;TipoDato&apos; on DomainClass &apos;Atributo&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements/Element.DisplayName" xml:space="preserve">
-    <value>Element</value>
-    <comment>DisplayName for DomainRole &apos;Element&apos; on DomainRelationship &apos;ExampleModelHasElements&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/admiteNull.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.Admite Null</value>
+    <comment>Description for DomainProperty &apos;admiteNull&apos; on DomainClass &apos;Atributo&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModelHasElements/Element.PropertyDisplayName" xml:space="preserve">
-    <value>Example Model</value>
-    <comment>PropertyDisplayName for DomainRole &apos;Element&apos; on DomainRelationship &apos;ExampleModelHasElements&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo/admiteNull.DisplayName" xml:space="preserve">
+    <value>Admite Null</value>
+    <comment>DisplayName for DomainProperty &apos;admiteNull&apos; on DomainClass &apos;Atributo&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets.Description" xml:space="preserve">
-    <value>Reference relationship between Elements.</value>
-    <comment>Description for DomainClass &apos;EntidadReferencesTargets&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoClavePrincipal.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoClavePrincipal</value>
+    <comment>Description for DomainClass &apos;AtributoClavePrincipal&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets.DisplayName" xml:space="preserve">
-    <value>Entidad References Targets</value>
-    <comment>DisplayName for DomainClass &apos;EntidadReferencesTargets&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoClavePrincipal.DisplayName" xml:space="preserve">
+    <value>Atributo Clave Principal</value>
+    <comment>DisplayName for DomainClass &apos;AtributoClavePrincipal&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets/Source.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleRelationship.Target</value>
-    <comment>Description for DomainRole &apos;Source&apos; on DomainRelationship &apos;EntidadReferencesTargets&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes</value>
+    <comment>Description for DomainClass &apos;Componentes&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets/Source.DisplayName" xml:space="preserve">
-    <value>Source</value>
-    <comment>DisplayName for DomainRole &apos;Source&apos; on DomainRelationship &apos;EntidadReferencesTargets&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes.DisplayName" xml:space="preserve">
+    <value>Componentes</value>
+    <comment>DisplayName for DomainClass &apos;Componentes&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets/Source.PropertyDisplayName" xml:space="preserve">
-    <value>Targets</value>
-    <comment>PropertyDisplayName for DomainRole &apos;Source&apos; on DomainRelationship &apos;EntidadReferencesTargets&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes/Nombre.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes.Nombre</value>
+    <comment>Description for DomainProperty &apos;Nombre&apos; on DomainClass &apos;Componentes&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets/Target.Description" xml:space="preserve">
-    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleRelationship.Source</value>
-    <comment>Description for DomainRole &apos;Target&apos; on DomainRelationship &apos;EntidadReferencesTargets&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes/Nombre.DisplayName" xml:space="preserve">
+    <value>Nombre</value>
+    <comment>DisplayName for DomainProperty &apos;Nombre&apos; on DomainClass &apos;Componentes&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets/Target.DisplayName" xml:space="preserve">
-    <value>Target</value>
-    <comment>DisplayName for DomainRole &apos;Target&apos; on DomainRelationship &apos;EntidadReferencesTargets&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo</value>
+    <comment>Description for DomainClass &apos;EntidadHasAtributo&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets/Target.PropertyDisplayName" xml:space="preserve">
-    <value>Sources</value>
-    <comment>PropertyDisplayName for DomainRole &apos;Target&apos; on DomainRelationship &apos;EntidadReferencesTargets&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.DisplayName" xml:space="preserve">
+    <value>Entidad Has Atributo</value>
+    <comment>DisplayName for DomainClass &apos;EntidadHasAtributo&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleShape.Description" xml:space="preserve">
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo/Entidad.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.Entidad</value>
+    <comment>Description for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo/Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo/Entidad.PropertyDisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo/Atributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.Atributo</value>
+    <comment>Description for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;EntidadHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo/Atributo.DisplayName" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>DisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;EntidadHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo/Atributo.PropertyDisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Atributo&apos; on DomainRelationship &apos;EntidadHasAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes</value>
+    <comment>Description for DomainClass &apos;TapizERHasComponentes&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.DisplayName" xml:space="preserve">
+    <value>Tapiz ERHas Componentes</value>
+    <comment>DisplayName for DomainClass &apos;TapizERHasComponentes&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes/TapizER.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.TapizER</value>
+    <comment>Description for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERHasComponentes&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes/TapizER.DisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>DisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERHasComponentes&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes/TapizER.PropertyDisplayName" xml:space="preserve">
+    <value>Componentes</value>
+    <comment>PropertyDisplayName for DomainRole &apos;TapizER&apos; on DomainRelationship &apos;TapizERHasComponentes&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes/Componentes.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.Componentes</value>
+    <comment>Description for DomainRole &apos;Componentes&apos; on DomainRelationship &apos;TapizERHasComponentes&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes/Componentes.DisplayName" xml:space="preserve">
+    <value>Componentes</value>
+    <comment>DisplayName for DomainRole &apos;Componentes&apos; on DomainRelationship &apos;TapizERHasComponentes&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes/Componentes.PropertyDisplayName" xml:space="preserve">
+    <value>Tapiz ER</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Componentes&apos; on DomainRelationship &apos;TapizERHasComponentes&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen</value>
+    <comment>Description for DomainClass &apos;EntidadOrigen&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.DisplayName" xml:space="preserve">
+    <value>Entidad Origen</value>
+    <comment>DisplayName for DomainClass &apos;EntidadOrigen&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen/Cardinalidad.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.Cardinalidad</value>
+    <comment>Description for DomainProperty &apos;Cardinalidad&apos; on DomainClass &apos;EntidadOrigen&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen/Cardinalidad.DisplayName" xml:space="preserve">
+    <value>Cardinalidad</value>
+    <comment>DisplayName for DomainProperty &apos;Cardinalidad&apos; on DomainClass &apos;EntidadOrigen&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen/Entidad.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.Entidad</value>
+    <comment>Description for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadOrigen&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen/Entidad.DisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>DisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadOrigen&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen/Entidad.PropertyDisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Entidad&apos; on DomainRelationship &apos;EntidadOrigen&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen/Relacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.Relacion</value>
+    <comment>Description for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;EntidadOrigen&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen/Relacion.DisplayName" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>DisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;EntidadOrigen&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen/Relacion.PropertyDisplayName" xml:space="preserve">
+    <value>Entidad</value>
+    <comment>PropertyDisplayName for DomainRole &apos;Relacion&apos; on DomainRelationship &apos;EntidadOrigen&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.GSEntidad.Description" xml:space="preserve">
     <value>Shape used to represent ExampleElements on a Diagram.</value>
-    <comment>Description for DomainClass &apos;ExampleShape&apos;</comment>
+    <comment>Description for DomainClass &apos;GSEntidad&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleShape.DisplayName" xml:space="preserve">
-    <value>Example Shape</value>
-    <comment>DisplayName for DomainClass &apos;ExampleShape&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.GSEntidad.DisplayName" xml:space="preserve">
+    <value>GSEntidad</value>
+    <comment>DisplayName for DomainClass &apos;GSEntidad&apos;</comment>
   </data>
-  <data name="ExampleShapeNameDecoratorDefaultText" xml:space="preserve">
+  <data name="GSEntidadNameDecoratorDefaultText" xml:space="preserve">
     <value>NameDecorator</value>
     <comment>Text decorator default text</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleConnector.Description" xml:space="preserve">
-    <value>Connector between the ExampleShapes. Represents ExampleRelationships on the Diagram.</value>
-    <comment>Description for DomainClass &apos;ExampleConnector&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.GSRelacion.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.GSRelacion</value>
+    <comment>Description for DomainClass &apos;GSRelacion&apos;</comment>
   </data>
-  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleConnector.DisplayName" xml:space="preserve">
-    <value>Example Connector</value>
-    <comment>DisplayName for DomainClass &apos;ExampleConnector&apos;</comment>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.GSRelacion.DisplayName" xml:space="preserve">
+    <value>GSRelacion</value>
+    <comment>DisplayName for DomainClass &apos;GSRelacion&apos;</comment>
+  </data>
+  <data name="GSRelacionNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributo.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributo</value>
+    <comment>Description for DomainClass &apos;GSAtributo&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributo.DisplayName" xml:space="preserve">
+    <value>GSAtributo</value>
+    <comment>DisplayName for DomainClass &apos;GSAtributo&apos;</comment>
+  </data>
+  <data name="GSAtributoNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributoCP.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributoCP</value>
+    <comment>Description for DomainClass &apos;GSAtributoCP&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributoCP.DisplayName" xml:space="preserve">
+    <value>GSAtributo CP</value>
+    <comment>DisplayName for DomainClass &apos;GSAtributoCP&apos;</comment>
+  </data>
+  <data name="GSAtributoCPNameDecoratorDefaultText" xml:space="preserve">
+    <value>NameDecorator</value>
+    <comment>Text decorator default text</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributoConnector.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributoConnector</value>
+    <comment>Description for DomainClass &apos;EntidadHasAtributoConnector&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributoConnector.DisplayName" xml:space="preserve">
+    <value>Entidad Has Atributo Connector</value>
+    <comment>DisplayName for DomainClass &apos;EntidadHasAtributoConnector&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigenConnector.Description" xml:space="preserve">
+    <value>Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigenConnector</value>
+    <comment>Description for DomainClass &apos;EntidadOrigenConnector&apos;</comment>
+  </data>
+  <data name="UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigenConnector.DisplayName" xml:space="preserve">
+    <value>Entidad Origen Connector</value>
+    <comment>DisplayName for DomainClass &apos;EntidadOrigenConnector&apos;</comment>
+  </data>
+  <data name="EntidadOrigenConnectorCardinalidadDecoratorDefaultText" xml:space="preserve">
+    <value>CardinalidadDecorator</value>
+    <comment>Text decorator default text</comment>
   </data>
   <data name="FormatList" xml:space="preserve">
     <value>AFTVFRGGBDERAWebBDs (*.AFTVFRGGB_DSLDERAWebBDs)|*.AFTVFRGGB_DSLDERAWebBDs</value>
@@ -253,20 +397,48 @@
     <value>AFTVFRGGBDERAWebBDs</value>
     <comment>Toolbox item tab name</comment>
   </data>
-  <data name="ExampleElementToolboxItem" xml:space="preserve">
-    <value>ExampleElement</value>
+  <data name="TodoToolboxTab" xml:space="preserve">
+    <value>Todo</value>
+    <comment>Toolbox item tab name</comment>
+  </data>
+  <data name="EntidadToolboxItem" xml:space="preserve">
+    <value>Entidad</value>
     <comment>Toolbox item name</comment>
   </data>
-  <data name="ExampleElementToolboxTooltip" xml:space="preserve">
-    <value>Create an ExampleElement</value>
+  <data name="EntidadToolboxTooltip" xml:space="preserve">
+    <value>Entidad</value>
     <comment>Toolbox tooltip text</comment>
   </data>
-  <data name="ExampleRelationshipToolboxItem" xml:space="preserve">
-    <value>ExampleRelationship</value>
+  <data name="AtributoToolboxItem" xml:space="preserve">
+    <value>Atributo</value>
     <comment>Toolbox item name</comment>
   </data>
-  <data name="ExampleRelationshipToolboxTooltip" xml:space="preserve">
-    <value>Drag between ExampleElements to create an ExampleRelationship</value>
+  <data name="AtributoToolboxTooltip" xml:space="preserve">
+    <value>Atributo</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="AtributoClavePrincipalToolboxItem" xml:space="preserve">
+    <value>AtributoClavePrincipal</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="AtributoClavePrincipalToolboxTooltip" xml:space="preserve">
+    <value>Atributo Clave Principal</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="RelacionToolboxItem" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="RelacionToolboxTooltip" xml:space="preserve">
+    <value>Relacion</value>
+    <comment>Toolbox tooltip text</comment>
+  </data>
+  <data name="Entidad_a_RelacionToolboxItem" xml:space="preserve">
+    <value>Entidad_a_Relacion</value>
+    <comment>Toolbox item name</comment>
+  </data>
+  <data name="Entidad_a_RelacionToolboxTooltip" xml:space="preserve">
+    <value>Entidad_a_ Relacion</value>
     <comment>Toolbox tooltip text</comment>
   </data>
   <data name="UnresolvedToolboxItem" xml:space="preserve">
@@ -394,12 +566,24 @@ A DomainClass can be serialized as a moniker only if
     <comment>Message when validation errors are found on save that will cause file to become unloadable</comment>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ExampleElementToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
-    <value>..\resources\exampleshapetoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EntidadToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
-  <data name="ExampleRelationshipToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
-    <value>..\resources\exampleconnectortoolbitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AtributoToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="AtributoClavePrincipalToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="RelacionToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleShapeToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <comment>Toolbox item image</comment>
+  </data>
+  <data name="Entidad_a_RelacionToolboxBitmap" type="System.Resources.ResXFileRef, System.Windows.Forms" xml:space="preserve">
+    <value>..\Resources\ExampleConnectorToolBitmap.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>Toolbox item image</comment>
   </data>
 </root>

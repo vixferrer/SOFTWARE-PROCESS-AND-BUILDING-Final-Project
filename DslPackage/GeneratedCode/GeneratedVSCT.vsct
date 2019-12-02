@@ -103,15 +103,15 @@
   <VisibilityItem guid="guidCmdSet" id="cmdidViewExplorer" context="guidEditor" />
 </VisibilityConstraints>
 <Symbols>
-  <GuidSymbol name="guidPkg" value="{b693abf6-9f5c-4534-98c8-969450af4f04}" />
-  <GuidSymbol name="guidCmdSet" value="{5baeca28-fc05-4423-9222-5c2af626998c}" >
+  <GuidSymbol name="guidPkg" value="{dea5e051-517d-47b1-88d4-85a4f7ef9a2e}" />
+  <GuidSymbol name="guidCmdSet" value="{48829d9d-cc1a-4802-a3fd-edc58e941e7f}" >
     <IDSymbol name="menuidContext" value="0x10000"/>
     <IDSymbol name="grpidContextMain" value="0x20000"/>
     <IDSymbol name="grpidExplorerCopyPaste" value="0x30000"/>
     <IDSymbol name="menuidExplorer" value="0x10001"/>
     <IDSymbol name="cmdidViewExplorer" value="0x0001"/>
   </GuidSymbol>
-  <GuidSymbol name="guidEditor" value="{6d08c705-ca5f-47c9-bcd8-537592d2c7ab}" />
+  <GuidSymbol name="guidEditor" value="{7c7b976f-fe00-487d-9c41-0cd5205722e6}" />
 </Symbols>
 </CommandTable>
 

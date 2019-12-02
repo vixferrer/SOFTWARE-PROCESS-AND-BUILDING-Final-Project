@@ -305,7 +305,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		protected override void Load(string fileName, bool isReload)
 		{
 			DslModeling::SerializationResult serializationResult = new DslModeling::SerializationResult();
-			global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModel modelRoot = null;
+			global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizER modelRoot = null;
 			DslModeling::ISchemaResolver schemaResolver = new DslShell::ModelingSchemaResolver(this.ServiceProvider);
 			//clear the current root element
 			this.SetRootElement(null);
@@ -410,7 +410,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		protected override void Save(string fileName)
 		{
 			DslModeling::SerializationResult serializationResult = new DslModeling::SerializationResult();
-			global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModel modelRoot = (global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModel)this.RootElement;
+			global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizER modelRoot = (global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizER)this.RootElement;
 
 			
 			// Only save the diagrams if
@@ -556,7 +556,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		{
 			get
 			{
-				global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModel modelRoot = this.RootElement as global::UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleModel;
+				global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizER modelRoot = this.RootElement as global::UPM_IPS.AFTVFRGGBDERAWebBDs.TapizER;
 				string modelFile = string.Empty;
 				if (modelRoot != null)
 				{

@@ -15,7 +15,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 	/// <summary>
 	/// ConnectionBuilder class to provide logic for constructing connections between elements.
 	/// </summary>
-	public static partial class EntidadReferencesTargetsBuilder
+	public static partial class EntidadOrigenBuilder
 	{
 		#region Accept Connection Methods
 		/// <summary>
@@ -44,7 +44,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		public static bool CanAcceptTarget(DslModeling::ModelElement candidate)
 		{
 			if (candidate == null) return false;
-			else if (candidate is global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad)
+			else if (candidate is global::UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion)
 			{ 
 				return true;
 			}
@@ -85,11 +85,11 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			{
 				if (candidateSource is global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad)
 				{
-					if (candidateTarget is global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad)
+					if (candidateTarget is global::UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion)
 					{
 						global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad sourceEntidad = (global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad)candidateSource;
-						global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad targetEntidad = (global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad)candidateTarget;
-						if(targetEntidad == null || sourceEntidad == null || global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets.GetLinks(sourceEntidad, targetEntidad).Count > 0) return false;
+						global::UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion targetRelacion = (global::UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion)candidateTarget;
+						if(targetRelacion == null || sourceEntidad == null || global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.GetLinks(sourceEntidad, targetRelacion).Count > 0) return false;
 						return true;
 					}
 				}
@@ -123,11 +123,11 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			{
 				if (source is global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad)
 				{
-					if (target is global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad)
+					if (target is global::UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion)
 					{
 						global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad sourceAccepted = (global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad)source;
-						global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad targetAccepted = (global::UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad)target;
-						DslModeling::ElementLink result = new global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadReferencesTargets(sourceAccepted, targetAccepted);
+						global::UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion targetAccepted = (global::UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion)target;
+						DslModeling::ElementLink result = new global::UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen(sourceAccepted, targetAccepted);
 						if (DslModeling::DomainClassInfo.HasNameProperty(result))
 						{
 							DslModeling::DomainClassInfo.SetUniqueName(result);
@@ -146,14 +146,14 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
  	/// <summary>
 	/// Handles interaction between the ConnectionBuilder and the corresponding ConnectionTool.
 	/// </summary>
-	internal partial class ExampleRelationshipConnectAction : DslDiagrams::ConnectAction
+	internal partial class Entidad_a_RelacionConnectAction : DslDiagrams::ConnectAction
 	{
 		private DslDiagrams::ConnectionType[] connectionTypes;
 		
 		/// <summary>
-		/// Constructs a new ExampleRelationshipConnectAction for the given Diagram.
+		/// Constructs a new Entidad_a_RelacionConnectAction for the given Diagram.
 		/// </summary>
-		public ExampleRelationshipConnectAction(DslDiagrams::Diagram diagram): base(diagram, true) 
+		public Entidad_a_RelacionConnectAction(DslDiagrams::Diagram diagram): base(diagram, true) 
 		{
 		}
 		
@@ -183,24 +183,24 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 		
 		
 		/// <summary>
-		/// Returns the ExampleRelationshipConnectionType associated with this action.
+		/// Returns the Entidad_a_RelacionConnectionType associated with this action.
 		/// </summary>
 		protected override DslDiagrams::ConnectionType[] GetConnectionTypes(DslDiagrams::ShapeElement sourceShapeElement, DslDiagrams::ShapeElement targetShapeElement)
 		{
 			if(this.connectionTypes == null)
 			{
-				this.connectionTypes = new DslDiagrams::ConnectionType[] { new ExampleRelationshipConnectionType() };
+				this.connectionTypes = new DslDiagrams::ConnectionType[] { new Entidad_a_RelacionConnectionType() };
 			}
 			
 			return this.connectionTypes;
 		}
 		
-		private partial class ExampleRelationshipConnectionTypeBase : DslDiagrams::ConnectionType
+		private partial class Entidad_a_RelacionConnectionTypeBase : DslDiagrams::ConnectionType
 		{
 			/// <summary>
-			/// Constructs a new the ExampleRelationshipConnectionType with the given ConnectionBuilder.
+			/// Constructs a new the Entidad_a_RelacionConnectionType with the given ConnectionBuilder.
 			/// </summary>
-			protected ExampleRelationshipConnectionTypeBase() : base() {}
+			protected Entidad_a_RelacionConnectionTypeBase() : base() {}
 			
 			private static DslDiagrams::ShapeElement RemovePassThroughShapes(DslDiagrams::ShapeElement shape)
 			{
@@ -220,7 +220,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			/// Called by the base ConnectAction class to determine if the given shapes can be connected.
 			/// </summary>
 			/// <remarks>
-			/// This implementation delegates calls to the ConnectionBuilder EntidadReferencesTargetsBuilder.
+			/// This implementation delegates calls to the ConnectionBuilder EntidadOrigenBuilder.
 			/// </remarks>
 			public override bool CanCreateConnection(DslDiagrams::ShapeElement sourceShapeElement, DslDiagrams::ShapeElement targetShapeElement, ref string connectionWarning)
 			{
@@ -246,11 +246,11 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 				{				
 					if(targetShapeElement == null)
 					{
-						return EntidadReferencesTargetsBuilder.CanAcceptSource(sourceElement);
+						return EntidadOrigenBuilder.CanAcceptSource(sourceElement);
 					}
 					else
 					{				
-						return EntidadReferencesTargetsBuilder.CanAcceptSourceAndTarget(sourceElement, targetElement);
+						return EntidadOrigenBuilder.CanAcceptSourceAndTarget(sourceElement, targetElement);
 					}
 				}
 				else
@@ -275,7 +275,7 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 			/// Called by the base ConnectAction class to create the underlying relationship.
 			/// </summary>
 			/// <remarks>
-			/// This implementation delegates calls to the ConnectionBuilder EntidadReferencesTargetsBuilder.
+			/// This implementation delegates calls to the ConnectionBuilder EntidadOrigenBuilder.
 			/// </remarks>
 			public override void CreateConnection(DslDiagrams::ShapeElement sourceShapeElement, DslDiagrams::ShapeElement targetShapeElement, DslDiagrams::PaintFeedbackArgs paintFeedbackArgs)
 			{
@@ -289,16 +289,16 @@ namespace UPM_IPS.AFTVFRGGBDERAWebBDs
 				if(sourceElement == null) sourceElement = sourceShapeElement;
 				DslModeling::ModelElement targetElement = targetShapeElement.ModelElement;
 				if(targetElement == null) targetElement = targetShapeElement;
-				EntidadReferencesTargetsBuilder.Connect(sourceElement, targetElement);
+				EntidadOrigenBuilder.Connect(sourceElement, targetElement);
 			}
 		}
 		
-		private partial class ExampleRelationshipConnectionType : ExampleRelationshipConnectionTypeBase
+		private partial class Entidad_a_RelacionConnectionType : Entidad_a_RelacionConnectionTypeBase
 		{
 			/// <summary>
-			/// Constructs a new the ExampleRelationshipConnectionType with the given ConnectionBuilder.
+			/// Constructs a new the Entidad_a_RelacionConnectionType with the given ConnectionBuilder.
 			/// </summary>
-			public ExampleRelationshipConnectionType() : base() {}
+			public Entidad_a_RelacionConnectionType() : base() {}
 		}
 	}
 }

@@ -1,22 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Dsl xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="53f5c7a0-bb76-4080-8c7a-54188f955c43" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDs" Name="AFTVFRGGBDERAWebBDs" DisplayName="AFTVFRGGBDERAWebBDs" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" ProductName="AFTVFRGGBDERAWebBDs" CompanyName="UPM_IPS" PackageGuid="b693abf6-9f5c-4534-98c8-969450af4f04" PackageNamespace="UPM_IPS.AFTVFRGGBDERAWebBDs" xmlns="http://schemas.microsoft.com/VisualStudio/2005/DslTools/DslDefinitionModel">
+<Dsl xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a8688626-5fc2-43a2-9ed2-8d656e306e0c" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDs" Name="AFTVFRGGBDERAWebBDs" DisplayName="AFTVFRGGBDERAWebBDs" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" ProductName="AFTVFRGGBDERAWebBDs" CompanyName="UPM_IPS" PackageGuid="dea5e051-517d-47b1-88d4-85a4f7ef9a2e" PackageNamespace="UPM_IPS.AFTVFRGGBDERAWebBDs" xmlns="http://schemas.microsoft.com/VisualStudio/2005/DslTools/DslDefinitionModel">
   <Classes>
-    <DomainClass Id="4322c315-a6a3-4f3e-a73a-cce5d0d00e00" Description="The root in which all other elements are embedded. Appears as a diagram." Name="ExampleModel" DisplayName="Example Model" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
+    <DomainClass Id="258a016f-6441-425c-91f9-ec88952f3e1f" Description="The root in which all other elements are embedded. Appears as a diagram." Name="TapizER" DisplayName="Tapiz ER" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
       <ElementMergeDirectives>
         <ElementMergeDirective>
-          <Notes>Creates an embedding link when an element is dropped onto a model. </Notes>
           <Index>
-            <DomainClassMoniker Name="Entidad" />
+            <DomainClassMoniker Name="Componentes" />
           </Index>
           <LinkCreationPaths>
-            <DomainPath>ExampleModelHasElements.Elements</DomainPath>
+            <DomainPath>TapizERHasComponentes.Componentes</DomainPath>
           </LinkCreationPaths>
         </ElementMergeDirective>
       </ElementMergeDirectives>
     </DomainClass>
-    <DomainClass Id="135e50df-7faf-40f7-b61b-010a688c7c0a" Description="Elements embedded in the model. Appear as boxes on the diagram." Name="Entidad" DisplayName="Entidad" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
+    <DomainClass Id="293546fa-97d9-4290-a976-c0f939ce7f94" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad" Name="Entidad" DisplayName="Entidad" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
+      <BaseClass>
+        <DomainClassMoniker Name="Componentes" />
+      </BaseClass>
+      <ElementMergeDirectives>
+        <ElementMergeDirective>
+          <Index>
+            <DomainClassMoniker Name="Atributo" />
+          </Index>
+          <LinkCreationPaths>
+            <DomainPath>EntidadHasAtributo.Atributo</DomainPath>
+          </LinkCreationPaths>
+        </ElementMergeDirective>
+      </ElementMergeDirectives>
+    </DomainClass>
+    <DomainClass Id="220b8fc1-578e-42b5-bb38-b2aa3c0143ba" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Relacion" Name="Relacion" DisplayName="Relacion" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
+      <BaseClass>
+        <DomainClassMoniker Name="Componentes" />
+      </BaseClass>
+    </DomainClass>
+    <DomainClass Id="35ce9395-915d-43ed-8ca8-447b32a04c75" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo" Name="Atributo" DisplayName="Atributo" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
       <Properties>
-        <DomainProperty Id="1c62aa98-a994-4291-b21f-4e87c4bf53b8" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Entidad.Name" Name="Name" DisplayName="Name" DefaultValue="Entidad" IsElementName="true">
+        <DomainProperty Id="01dea2c6-280c-4797-b077-cc023e8cb33d" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.Nombre" Name="Nombre" DisplayName="Nombre">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="b4189912-abd5-4da3-b035-df92e81a0ac8" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.Tipo Dato" Name="TipoDato" DisplayName="Tipo Dato">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+        <DomainProperty Id="ed579a4d-d0c1-42d1-9003-be8cf9fb5d95" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Atributo.Admite Null" Name="admiteNull" DisplayName="Admite Null" DefaultValue="">
+          <Type>
+            <ExternalTypeMoniker Name="/System/Boolean" />
+          </Type>
+        </DomainProperty>
+      </Properties>
+    </DomainClass>
+    <DomainClass Id="67df29fd-1334-4650-8cd1-a2bc7ad36129" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.AtributoClavePrincipal" Name="AtributoClavePrincipal" DisplayName="Atributo Clave Principal" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
+      <BaseClass>
+        <DomainClassMoniker Name="Atributo" />
+      </BaseClass>
+    </DomainClass>
+    <DomainClass Id="a8753c9b-39ab-4e2e-a939-68fa0ccfd304" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes" Name="Componentes" DisplayName="Componentes" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
+      <Properties>
+        <DomainProperty Id="9649683b-94b6-4c0f-afc7-ca3b3dcc3ff8" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.Componentes.Nombre" Name="Nombre" DisplayName="Nombre">
           <Type>
             <ExternalTypeMoniker Name="/System/String" />
           </Type>
@@ -25,34 +68,57 @@
     </DomainClass>
   </Classes>
   <Relationships>
-    <DomainRelationship Id="cbb2df1d-4cae-46bb-aa29-44c9d48dca4d" Description="Embedding relationship between the Model and Elements" Name="ExampleModelHasElements" DisplayName="Example Model Has Elements" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" IsEmbedding="true">
+    <DomainRelationship Id="0423f711-909a-4bc1-a822-21380aa75b3f" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo" Name="EntidadHasAtributo" DisplayName="Entidad Has Atributo" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" IsEmbedding="true">
       <Source>
-        <DomainRole Id="ff786e02-220d-459b-8fca-951e9e4ff946" Description="" Name="ExampleModel" DisplayName="Example Model" PropertyName="Elements" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Elements">
+        <DomainRole Id="a5e661a0-b086-4603-bc67-d0b178af4d72" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.Entidad" Name="Entidad" DisplayName="Entidad" PropertyName="Atributo" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Atributo">
           <RolePlayer>
-            <DomainClassMoniker Name="ExampleModel" />
+            <DomainClassMoniker Name="Entidad" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="a386d193-61de-45ea-a50f-d28a6441cd51" Description="" Name="Element" DisplayName="Element" PropertyName="ExampleModel" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Example Model">
+        <DomainRole Id="e444affc-7890-47e5-9cca-97ec40e73df7" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributo.Atributo" Name="Atributo" DisplayName="Atributo" PropertyName="Entidad" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Entidad">
           <RolePlayer>
-            <DomainClassMoniker Name="Entidad" />
+            <DomainClassMoniker Name="Atributo" />
           </RolePlayer>
         </DomainRole>
       </Target>
     </DomainRelationship>
-    <DomainRelationship Id="2dff95dc-b82d-476b-aa6d-9294349806cf" Description="Reference relationship between Elements." Name="EntidadReferencesTargets" DisplayName="Entidad References Targets" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
+    <DomainRelationship Id="e3878240-b859-49c3-b8c0-0680ea7913d7" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes" Name="TapizERHasComponentes" DisplayName="Tapiz ERHas Componentes" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" IsEmbedding="true">
       <Source>
-        <DomainRole Id="da2ea47d-75ab-403f-b176-ed16d6aef73f" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleRelationship.Target" Name="Source" DisplayName="Source" PropertyName="Targets" PropertyDisplayName="Targets">
+        <DomainRole Id="309194be-5513-4b2a-850d-dcb890e83e09" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.TapizER" Name="TapizER" DisplayName="Tapiz ER" PropertyName="Componentes" PropagatesCopy="PropagatesCopyToLinkAndOppositeRolePlayer" PropertyDisplayName="Componentes">
+          <RolePlayer>
+            <DomainClassMoniker Name="TapizER" />
+          </RolePlayer>
+        </DomainRole>
+      </Source>
+      <Target>
+        <DomainRole Id="5ed94422-f086-4b26-ac15-edf30a549b8e" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.TapizERHasComponentes.Componentes" Name="Componentes" DisplayName="Componentes" PropertyName="TapizER" Multiplicity="One" PropagatesDelete="true" PropertyDisplayName="Tapiz ER">
+          <RolePlayer>
+            <DomainClassMoniker Name="Componentes" />
+          </RolePlayer>
+        </DomainRole>
+      </Target>
+    </DomainRelationship>
+    <DomainRelationship Id="dcef7926-8070-49bf-9e4a-0c274f3c3d11" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen" Name="EntidadOrigen" DisplayName="Entidad Origen" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
+      <Properties>
+        <DomainProperty Id="cc342bb7-bb5d-4e2c-8941-4efbe57127b6" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.Cardinalidad" Name="Cardinalidad" DisplayName="Cardinalidad">
+          <Type>
+            <ExternalTypeMoniker Name="/System/String" />
+          </Type>
+        </DomainProperty>
+      </Properties>
+      <Source>
+        <DomainRole Id="013130c3-6b77-4795-8c2f-3742a26e7aab" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.Entidad" Name="Entidad" DisplayName="Entidad" PropertyName="Relacion" PropertyDisplayName="Relacion">
           <RolePlayer>
             <DomainClassMoniker Name="Entidad" />
           </RolePlayer>
         </DomainRole>
       </Source>
       <Target>
-        <DomainRole Id="6727d531-64e8-432a-bf9e-62c24aa47bda" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.ExampleRelationship.Source" Name="Target" DisplayName="Target" PropertyName="Sources" PropertyDisplayName="Sources">
+        <DomainRole Id="400e8e21-93c6-4035-88d7-0f529548c1f8" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigen.Relacion" Name="Relacion" DisplayName="Relacion" PropertyName="Entidad" PropertyDisplayName="Entidad">
           <RolePlayer>
-            <DomainClassMoniker Name="Entidad" />
+            <DomainClassMoniker Name="Relacion" />
           </RolePlayer>
         </DomainRole>
       </Target>
@@ -76,60 +142,127 @@
     <ExternalType Name="Char" Namespace="System" />
   </Types>
   <Shapes>
-    <GeometryShape Id="ce3bbb64-4a89-4bca-ac57-699fa889674e" Description="Shape used to represent ExampleElements on a Diagram." Name="ExampleShape" DisplayName="Example Shape" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" FixedTooltipText="Example Shape" FillColor="Teal" OutlineColor="113, 111, 110" InitialWidth="2" InitialHeight="0.75" OutlineThickness="0.01" FillGradientMode="Vertical" Geometry="Rectangle">
+    <GeometryShape Id="7aa1d869-880a-475c-8764-66f4c91d7132" Description="Shape used to represent ExampleElements on a Diagram." Name="GSEntidad" DisplayName="GSEntidad" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" FixedTooltipText="GSEntidad" FillColor="Plum" OutlineColor="113, 111, 110" InitialWidth="2" InitialHeight="0.75" OutlineThickness="0.01" FillGradientMode="Vertical" Geometry="Rectangle">
       <Notes>The shape has a text decorator used to display the Name property of the mapped ExampleElement.</Notes>
       <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
         <TextDecorator Name="NameDecorator" DisplayName="Name Decorator" DefaultText="NameDecorator" />
       </ShapeHasDecorators>
     </GeometryShape>
+    <GeometryShape Id="de9a8dbd-ee28-4b8d-b922-c6102e4b434c" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.GSRelacion" Name="GSRelacion" DisplayName="GSRelacion" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" FixedTooltipText="GSRelacion" FillColor="LightSteelBlue" InitialHeight="1" FillGradientMode="Vertical" Geometry="Circle">
+      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="NameDecorator" DisplayName="Name Decorator" DefaultText="NameDecorator" />
+      </ShapeHasDecorators>
+    </GeometryShape>
+    <GeometryShape Id="5735777d-e6d3-4e31-8147-026d2538ec1b" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributo" Name="GSAtributo" DisplayName="GSAtributo" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" FixedTooltipText="GSAtributo" FillColor="Pink" InitialHeight="1" FillGradientMode="None" Geometry="Ellipse">
+      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="NameDecorator" DisplayName="Name Decorator" DefaultText="NameDecorator" FontSize="10" />
+      </ShapeHasDecorators>
+    </GeometryShape>
+    <GeometryShape Id="5564a155-7016-453e-876a-7d9bb52263ba" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.GSAtributoCP" Name="GSAtributoCP" DisplayName="GSAtributo CP" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" FixedTooltipText="GSAtributo CP" FillColor="Pink" InitialHeight="1" FillGradientMode="None" Geometry="Ellipse">
+      <ShapeHasDecorators Position="Center" HorizontalOffset="0" VerticalOffset="0">
+        <TextDecorator Name="NameDecorator" DisplayName="Name Decorator" DefaultText="NameDecorator" FontStyle="Underline" FontSize="10" />
+      </ShapeHasDecorators>
+    </GeometryShape>
   </Shapes>
   <Connectors>
-    <Connector Id="7b8519f3-34e3-4e6d-b466-37ac3d84b9e5" Description="Connector between the ExampleShapes. Represents ExampleRelationships on the Diagram." Name="ExampleConnector" DisplayName="Example Connector" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" FixedTooltipText="Example Connector" Color="DarkGray" TargetEndStyle="EmptyDiamond" Thickness="0.01" />
+    <Connector Id="e39b30ec-86ed-4def-9fe8-3f8123d3e310" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadHasAtributoConnector" Name="EntidadHasAtributoConnector" DisplayName="Entidad Has Atributo Connector" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" FixedTooltipText="Entidad Has Atributo Connector" />
+    <Connector Id="3bd7dfae-a5a6-4c00-87a4-c4d723d671d6" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.EntidadOrigenConnector" Name="EntidadOrigenConnector" DisplayName="Entidad Origen Connector" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs" FixedTooltipText="Entidad Origen Connector">
+      <ConnectorHasDecorators Position="SourceTop" OffsetFromShape="0" OffsetFromLine="0">
+        <TextDecorator Name="CardinalidadDecorator" DisplayName="Cardinalidad Decorator" DefaultText="CardinalidadDecorator" />
+      </ConnectorHasDecorators>
+    </Connector>
   </Connectors>
   <XmlSerializationBehavior Name="AFTVFRGGBDERAWebBDsSerializationBehavior" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
     <ClassData>
-      <XmlClassData TypeName="ExampleModel" MonikerAttributeName="" SerializeId="true" MonikerElementName="exampleModelMoniker" ElementName="exampleModel" MonikerTypeName="ExampleModelMoniker">
-        <DomainClassMoniker Name="ExampleModel" />
+      <XmlClassData TypeName="TapizER" MonikerAttributeName="" SerializeId="true" MonikerElementName="tapizERMoniker" ElementName="tapizER" MonikerTypeName="TapizERMoniker">
+        <DomainClassMoniker Name="TapizER" />
         <ElementData>
-          <XmlRelationshipData RoleElementName="elements">
-            <DomainRelationshipMoniker Name="ExampleModelHasElements" />
+          <XmlRelationshipData UseFullForm="true" RoleElementName="componentes">
+            <DomainRelationshipMoniker Name="TapizERHasComponentes" />
           </XmlRelationshipData>
         </ElementData>
       </XmlClassData>
-      <XmlClassData TypeName="Entidad" MonikerAttributeName="name" SerializeId="true" MonikerElementName="entidadMoniker" ElementName="entidad" MonikerTypeName="EntidadMoniker">
-        <DomainClassMoniker Name="Entidad" />
-        <ElementData>
-          <XmlPropertyData XmlName="name" IsMonikerKey="true">
-            <DomainPropertyMoniker Name="Entidad/Name" />
-          </XmlPropertyData>
-          <XmlRelationshipData RoleElementName="targets">
-            <DomainRelationshipMoniker Name="EntidadReferencesTargets" />
-          </XmlRelationshipData>
-        </ElementData>
-      </XmlClassData>
-      <XmlClassData TypeName="ExampleModelHasElements" MonikerAttributeName="" SerializeId="true" MonikerElementName="exampleModelHasElementsMoniker" ElementName="exampleModelHasElements" MonikerTypeName="ExampleModelHasElementsMoniker">
-        <DomainRelationshipMoniker Name="ExampleModelHasElements" />
-      </XmlClassData>
-      <XmlClassData TypeName="EntidadReferencesTargets" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadReferencesTargetsMoniker" ElementName="entidadReferencesTargets" MonikerTypeName="EntidadReferencesTargetsMoniker">
-        <DomainRelationshipMoniker Name="EntidadReferencesTargets" />
-      </XmlClassData>
-      <XmlClassData TypeName="ExampleShape" MonikerAttributeName="" SerializeId="true" MonikerElementName="exampleShapeMoniker" ElementName="exampleShape" MonikerTypeName="ExampleShapeMoniker">
-        <GeometryShapeMoniker Name="ExampleShape" />
-      </XmlClassData>
-      <XmlClassData TypeName="ExampleConnector" MonikerAttributeName="" SerializeId="true" MonikerElementName="exampleConnectorMoniker" ElementName="exampleConnector" MonikerTypeName="ExampleConnectorMoniker">
-        <ConnectorMoniker Name="ExampleConnector" />
+      <XmlClassData TypeName="GSEntidad" MonikerAttributeName="" SerializeId="true" MonikerElementName="gSEntidadMoniker" ElementName="gSEntidad" MonikerTypeName="GSEntidadMoniker">
+        <GeometryShapeMoniker Name="GSEntidad" />
       </XmlClassData>
       <XmlClassData TypeName="AFTVFRGGBDERAWebBDsDiagram" MonikerAttributeName="" SerializeId="true" MonikerElementName="aFTVFRGGBDERAWebBDsDiagramMoniker" ElementName="aFTVFRGGBDERAWebBDsDiagram" MonikerTypeName="AFTVFRGGBDERAWebBDsDiagramMoniker">
         <DiagramMoniker Name="AFTVFRGGBDERAWebBDsDiagram" />
+      </XmlClassData>
+      <XmlClassData TypeName="Entidad" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadMoniker" ElementName="entidad" MonikerTypeName="EntidadMoniker">
+        <DomainClassMoniker Name="Entidad" />
+        <ElementData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="atributo">
+            <DomainRelationshipMoniker Name="EntidadHasAtributo" />
+          </XmlRelationshipData>
+          <XmlRelationshipData UseFullForm="true" RoleElementName="relacion">
+            <DomainRelationshipMoniker Name="EntidadOrigen" />
+          </XmlRelationshipData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="Relacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="relacionMoniker" ElementName="relacion" MonikerTypeName="RelacionMoniker">
+        <DomainClassMoniker Name="Relacion" />
+      </XmlClassData>
+      <XmlClassData TypeName="Atributo" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoMoniker" ElementName="atributo" MonikerTypeName="AtributoMoniker">
+        <DomainClassMoniker Name="Atributo" />
+        <ElementData>
+          <XmlPropertyData XmlName="nombre">
+            <DomainPropertyMoniker Name="Atributo/Nombre" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="tipoDato">
+            <DomainPropertyMoniker Name="Atributo/TipoDato" />
+          </XmlPropertyData>
+          <XmlPropertyData XmlName="admiteNull">
+            <DomainPropertyMoniker Name="Atributo/admiteNull" />
+          </XmlPropertyData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="EntidadHasAtributo" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadHasAtributoMoniker" ElementName="entidadHasAtributo" MonikerTypeName="EntidadHasAtributoMoniker">
+        <DomainRelationshipMoniker Name="EntidadHasAtributo" />
+      </XmlClassData>
+      <XmlClassData TypeName="AtributoClavePrincipal" MonikerAttributeName="" SerializeId="true" MonikerElementName="atributoClavePrincipalMoniker" ElementName="atributoClavePrincipal" MonikerTypeName="AtributoClavePrincipalMoniker">
+        <DomainClassMoniker Name="AtributoClavePrincipal" />
+      </XmlClassData>
+      <XmlClassData TypeName="GSRelacion" MonikerAttributeName="" SerializeId="true" MonikerElementName="gSRelacionMoniker" ElementName="gSRelacion" MonikerTypeName="GSRelacionMoniker">
+        <GeometryShapeMoniker Name="GSRelacion" />
+      </XmlClassData>
+      <XmlClassData TypeName="GSAtributo" MonikerAttributeName="" SerializeId="true" MonikerElementName="gSAtributoMoniker" ElementName="gSAtributo" MonikerTypeName="GSAtributoMoniker">
+        <GeometryShapeMoniker Name="GSAtributo" />
+      </XmlClassData>
+      <XmlClassData TypeName="GSAtributoCP" MonikerAttributeName="" SerializeId="true" MonikerElementName="gSAtributoCPMoniker" ElementName="gSAtributoCP" MonikerTypeName="GSAtributoCPMoniker">
+        <GeometryShapeMoniker Name="GSAtributoCP" />
+      </XmlClassData>
+      <XmlClassData TypeName="EntidadHasAtributoConnector" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadHasAtributoConnectorMoniker" ElementName="entidadHasAtributoConnector" MonikerTypeName="EntidadHasAtributoConnectorMoniker">
+        <ConnectorMoniker Name="EntidadHasAtributoConnector" />
+      </XmlClassData>
+      <XmlClassData TypeName="Componentes" MonikerAttributeName="" SerializeId="true" MonikerElementName="componentesMoniker" ElementName="componentes" MonikerTypeName="ComponentesMoniker">
+        <DomainClassMoniker Name="Componentes" />
+        <ElementData>
+          <XmlPropertyData XmlName="nombre">
+            <DomainPropertyMoniker Name="Componentes/Nombre" />
+          </XmlPropertyData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="TapizERHasComponentes" MonikerAttributeName="" SerializeId="true" MonikerElementName="tapizERHasComponentesMoniker" ElementName="tapizERHasComponentes" MonikerTypeName="TapizERHasComponentesMoniker">
+        <DomainRelationshipMoniker Name="TapizERHasComponentes" />
+      </XmlClassData>
+      <XmlClassData TypeName="EntidadOrigen" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadOrigenMoniker" ElementName="entidadOrigen" MonikerTypeName="EntidadOrigenMoniker">
+        <DomainRelationshipMoniker Name="EntidadOrigen" />
+        <ElementData>
+          <XmlPropertyData XmlName="cardinalidad">
+            <DomainPropertyMoniker Name="EntidadOrigen/Cardinalidad" />
+          </XmlPropertyData>
+        </ElementData>
+      </XmlClassData>
+      <XmlClassData TypeName="EntidadOrigenConnector" MonikerAttributeName="" SerializeId="true" MonikerElementName="entidadOrigenConnectorMoniker" ElementName="entidadOrigenConnector" MonikerTypeName="EntidadOrigenConnectorMoniker">
+        <ConnectorMoniker Name="EntidadOrigenConnector" />
       </XmlClassData>
     </ClassData>
   </XmlSerializationBehavior>
   <ExplorerBehavior Name="AFTVFRGGBDERAWebBDsExplorer" />
   <ConnectionBuilders>
-    <ConnectionBuilder Name="EntidadReferencesTargetsBuilder">
-      <Notes>Provides for the creation of an ExampleRelationship by pointing at two ExampleElements.</Notes>
+    <ConnectionBuilder Name="EntidadOrigenBuilder">
       <LinkConnectDirective>
-        <DomainRelationshipMoniker Name="EntidadReferencesTargets" />
+        <DomainRelationshipMoniker Name="EntidadOrigen" />
         <SourceDirectives>
           <RolePlayerConnectDirective>
             <AcceptingClass>
@@ -140,60 +273,127 @@
         <TargetDirectives>
           <RolePlayerConnectDirective>
             <AcceptingClass>
-              <DomainClassMoniker Name="Entidad" />
+              <DomainClassMoniker Name="Relacion" />
             </AcceptingClass>
           </RolePlayerConnectDirective>
         </TargetDirectives>
       </LinkConnectDirective>
     </ConnectionBuilder>
   </ConnectionBuilders>
-  <Diagram Id="8c94f7b6-c909-4a75-8110-c4e84f9fb785" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDiagram" Name="AFTVFRGGBDERAWebBDsDiagram" DisplayName="Minimal Language Diagram" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
+  <Diagram Id="5e7989b5-756b-423f-b6d0-9d8dabb449c5" Description="Description for UPM_IPS.AFTVFRGGBDERAWebBDs.AFTVFRGGBDERAWebBDsDiagram" Name="AFTVFRGGBDERAWebBDsDiagram" DisplayName="Minimal Language Diagram" Namespace="UPM_IPS.AFTVFRGGBDERAWebBDs">
     <Class>
-      <DomainClassMoniker Name="ExampleModel" />
+      <DomainClassMoniker Name="TapizER" />
     </Class>
     <ShapeMaps>
       <ShapeMap>
-        <DomainClassMoniker Name="Entidad" />
+        <DomainClassMoniker Name="Relacion" />
         <ParentElementPath>
-          <DomainPath>ExampleModelHasElements.ExampleModel/!ExampleModel</DomainPath>
+          <DomainPath>TapizERHasComponentes.TapizER/!TapizER</DomainPath>
         </ParentElementPath>
         <DecoratorMap>
-          <TextDecoratorMoniker Name="ExampleShape/NameDecorator" />
+          <TextDecoratorMoniker Name="GSRelacion/NameDecorator" />
           <PropertyDisplayed>
             <PropertyPath>
-              <DomainPropertyMoniker Name="Entidad/Name" />
+              <DomainPropertyMoniker Name="Componentes/Nombre" />
             </PropertyPath>
           </PropertyDisplayed>
         </DecoratorMap>
-        <GeometryShapeMoniker Name="ExampleShape" />
+        <GeometryShapeMoniker Name="GSRelacion" />
+      </ShapeMap>
+      <ShapeMap>
+        <DomainClassMoniker Name="Atributo" />
+        <ParentElementPath>
+          <DomainPath>EntidadHasAtributo.Entidad/!Entidad/TapizERHasComponentes.TapizER/!TapizER</DomainPath>
+        </ParentElementPath>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="GSAtributo/NameDecorator" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Nombre" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <GeometryShapeMoniker Name="GSAtributo" />
+      </ShapeMap>
+      <ShapeMap>
+        <DomainClassMoniker Name="AtributoClavePrincipal" />
+        <ParentElementPath>
+          <DomainPath>EntidadHasAtributo.Entidad/!Entidad/TapizERHasComponentes.TapizER/!TapizER</DomainPath>
+        </ParentElementPath>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="GSAtributoCP/NameDecorator" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Atributo/Nombre" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <GeometryShapeMoniker Name="GSAtributoCP" />
+      </ShapeMap>
+      <ShapeMap>
+        <DomainClassMoniker Name="Entidad" />
+        <ParentElementPath>
+          <DomainPath>TapizERHasComponentes.TapizER/!TapizER</DomainPath>
+        </ParentElementPath>
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="GSEntidad/NameDecorator" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="Componentes/Nombre" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
+        <GeometryShapeMoniker Name="GSEntidad" />
       </ShapeMap>
     </ShapeMaps>
     <ConnectorMaps>
       <ConnectorMap>
-        <ConnectorMoniker Name="ExampleConnector" />
-        <DomainRelationshipMoniker Name="EntidadReferencesTargets" />
+        <ConnectorMoniker Name="EntidadHasAtributoConnector" />
+        <DomainRelationshipMoniker Name="EntidadHasAtributo" />
+      </ConnectorMap>
+      <ConnectorMap>
+        <ConnectorMoniker Name="EntidadOrigenConnector" />
+        <DomainRelationshipMoniker Name="EntidadOrigen" />
+        <DecoratorMap>
+          <TextDecoratorMoniker Name="EntidadOrigenConnector/CardinalidadDecorator" />
+          <PropertyDisplayed>
+            <PropertyPath>
+              <DomainPropertyMoniker Name="EntidadOrigen/Cardinalidad" />
+            </PropertyPath>
+          </PropertyDisplayed>
+        </DecoratorMap>
       </ConnectorMap>
     </ConnectorMaps>
   </Diagram>
-  <Designer CopyPasteGeneration="CopyPasteOnly" FileExtension="AFTVFRGGB_DSLDERAWebBDs" EditorGuid="6d08c705-ca5f-47c9-bcd8-537592d2c7ab">
+  <Designer CopyPasteGeneration="CopyPasteOnly" FileExtension="AFTVFRGGB_DSLDERAWebBDs" EditorGuid="7c7b976f-fe00-487d-9c41-0cd5205722e6">
     <RootClass>
-      <DomainClassMoniker Name="ExampleModel" />
+      <DomainClassMoniker Name="TapizER" />
     </RootClass>
     <XmlSerializationDefinition CustomPostLoad="false">
       <XmlSerializationBehaviorMoniker Name="AFTVFRGGBDERAWebBDsSerializationBehavior" />
     </XmlSerializationDefinition>
-    <ToolboxTab TabText="AFTVFRGGBDERAWebBDs">
-      <ElementTool Name="ExampleElement" ToolboxIcon="resources\exampleshapetoolbitmap.bmp" Caption="ExampleElement" Tooltip="Create an ExampleElement" HelpKeyword="CreateExampleClassF1Keyword">
+    <ToolboxTab TabText="AFTVFRGGBDERAWebBDs" />
+    <ToolboxTab TabText="Todo">
+      <ElementTool Name="Entidad" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="Entidad" Tooltip="Entidad" HelpKeyword="Entidad">
         <DomainClassMoniker Name="Entidad" />
       </ElementTool>
-      <ConnectionTool Name="ExampleRelationship" ToolboxIcon="resources\exampleconnectortoolbitmap.bmp" Caption="ExampleRelationship" Tooltip="Drag between ExampleElements to create an ExampleRelationship" HelpKeyword="ConnectExampleRelationF1Keyword">
-        <ConnectionBuilderMoniker Name="AFTVFRGGBDERAWebBDs/EntidadReferencesTargetsBuilder" />
+      <ElementTool Name="Atributo" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="Atributo" Tooltip="Atributo" HelpKeyword="Atributo">
+        <DomainClassMoniker Name="Atributo" />
+      </ElementTool>
+      <ElementTool Name="AtributoClavePrincipal" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="AtributoClavePrincipal" Tooltip="Atributo Clave Principal" HelpKeyword="AtributoClavePrincipal">
+        <DomainClassMoniker Name="AtributoClavePrincipal" />
+      </ElementTool>
+      <ElementTool Name="Relacion" ToolboxIcon="Resources\ExampleShapeToolBitmap.bmp" Caption="Relacion" Tooltip="Relacion" HelpKeyword="Relacion">
+        <DomainClassMoniker Name="Relacion" />
+      </ElementTool>
+      <ConnectionTool Name="Entidad_a_Relacion" ToolboxIcon="Resources\ExampleConnectorToolBitmap.bmp" Caption="Entidad_a_Relacion" Tooltip="Entidad_a_ Relacion" HelpKeyword="Entidad_a_Relacion">
+        <ConnectionBuilderMoniker Name="AFTVFRGGBDERAWebBDs/EntidadOrigenBuilder" />
       </ConnectionTool>
     </ToolboxTab>
     <Validation UsesMenu="false" UsesOpen="false" UsesSave="false" UsesLoad="false" />
     <DiagramMoniker Name="AFTVFRGGBDERAWebBDsDiagram" />
   </Designer>
-  <Explorer ExplorerGuid="5b9f2d15-3416-4e35-8a51-f359d48ff9f9" Title="AFTVFRGGBDERAWebBDs Explorer">
+  <Explorer ExplorerGuid="ce5dcc33-f03c-48ce-9f7d-8a558fe259a9" Title="AFTVFRGGBDERAWebBDs Explorer">
     <ExplorerBehaviorMoniker Name="AFTVFRGGBDERAWebBDs/AFTVFRGGBDERAWebBDsExplorer" />
   </Explorer>
 </Dsl>
